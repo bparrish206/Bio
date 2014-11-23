@@ -1,0 +1,16 @@
+{
+  "name": "bio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.10.2",
+    "grunt": "^0.4.5",
+    "mongoose": "^3.8.19"
+  }
+}

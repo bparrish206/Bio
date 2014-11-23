@@ -1,0 +1,68 @@
+#header {
+  background-color:#7FDBFF;
+  border: 2px blue;
+}
+
+h1 {
+  color: white;
+  padding: 35px;
+  font-family:comic;
+  text-shadow: 2px 2px #001F3F;
+}
+
+#mt {
+  display: inline-block;
+  margin-left: 5px;
+  float: left;
+  border-radius: 25px;
+}
+
+#tabs {
+background-color:#001F3F;
+text-align: center;
+}
+
+#box {
+  background-color:#DDDDDD;
+  margin:-1px 225px 0px 225px;
+  border: 2px solid #001F3F;
+  border-radius:25px;
+}
+
+#box p {
+  text-align: center;
+  padding: 20px;
+}
+
+background {
+background-color:#ffffff;
+
+}
+
+ul li {
+  color:#FF851B;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+	margin: 0 0 2px 0;
+  font-size:130%;
+}
+
+label, type[submit] {
+  display: block;
+  margin: 5px;
+}
+
+#signUp {
+  float:right;
+  display: inline;
+  text-align: center;
+  margin: 15px;
+  background-color: #FFdc00;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+}
