@@ -5,9 +5,10 @@
 
 h1 {
   color: #FFFFFF;
-  padding: 35px;
+  padding: 25px;
   font-family:comic;
-  text-shadow: 2px 2px #001F3F;
+  text-shadow: 1px 1px #001F3F;
+  font-size:250%;
 }
 
 #mt {
@@ -40,16 +41,19 @@ background-color:#ffffff;
 }
 
 ul li {
-  color:#FF851B;
   display: inline-block;
-  text-decoration: none;
   padding: 5px 20px 5px 20px;
   text-align: center;
 	margin: 0 0 2px 0;
-  font-size:130%;
 }
 
-ul li:hover {
+ul li a{
+  color:#FF851B;
+  font-size:130%;
+  text-decoration: none;
+}
+
+ul li a:hover {
   color:#FF4136;
 }
 
