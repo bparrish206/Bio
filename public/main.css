@@ -4,7 +4,7 @@
 }
 
 h1 {
-  color: white;
+  color: #FFFFFF;
   padding: 35px;
   font-family:comic;
   text-shadow: 2px 2px #001F3F;
@@ -49,6 +49,10 @@ ul li {
   font-size:130%;
 }
 
+ul li:hover {
+  color:#FF4136;
+}
+
 label, type[submit] {
   display: block;
   margin: 5px;
@@ -59,7 +63,8 @@ label, type[submit] {
   display: inline;
   text-align: center;
   margin: 15px;
-  background-color: #FFdc00;
+  background-color: #dad295;
+  border-radius:25px;
 }
 
 footer {

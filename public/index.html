@@ -6,23 +6,33 @@
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d,s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if(d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div id="header">
     <h1> Brent Parrish's page</h1>
   <div id="tabs">
     <ul>
-      <li a href = '#'> About</a></li>
-      <li a href = '#'> Portfolio</a></li>
-      <li a href = '#'> Contact</a></li>
+      <li a href = 'about.html'> About</a></li>
+      <li a href = 'portfolio'> Portfolio</a></li>
+      <li a href = 'contact.html'> Contact</a></li>
   </div>
 
 </div>
 
-  <aside>
-<form id="signUp">
+  <aside id="signUp">
+<form>
   <h4> Email list sign up</h4>
   <label for='name'> Name</label>
   <input type='text' id='name'>
-  <label for='signUp'>Email </label>
+</form>
+<form>
+  <label for='signUp'> Email</label>
   <input type='text' id='signUp'>
 </form>
 </aside>
@@ -34,6 +44,13 @@
 
     <p> Love is all there is!!!!</p>
   </div>
-<footer>@copyright protected and I will find you!</footer>
+<footer>@copyright protected and I will find you!
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script></footer>
 </body>
 </html>
