@@ -71,6 +71,10 @@ label, type[submit] {
   border-radius:25px;
 }
 
+#weather {
+  display: inline;
+}
+
 footer {
   text-align: center;
   margin: 15px;
