@@ -1,8 +1,17 @@
-function showLocation(position) {
+$(document).ready(function() {
+  $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+  $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+  $.post('/about/', function(data){
+    $('#show').append("Why I left: " + JSON.stringify(data.chart));
+  });
+
+
+
+ function showLocation(position) {
 var latitude = position.coords.latitude;
 var longitude = position.coords.longitude;
 
-      $.ajax({
+ $.ajax({
         url: '/',
         type: 'POST',
         urlData: {lat:latitude, lon: longitude},
@@ -12,17 +21,16 @@ var longitude = position.coords.longitude;
             $('#weather').append('<img src="'+urlData.outside+'">');
         }
       });
-    }
+}
 
-$(document).ready(function() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showLocation, function(err) {
       if (err) {
-        $('#space')
+        $('#weather')
         .html('<p>You Must Allow Access to Your Location to Find Out.</p>');
       }
     });
   } else {
-    $('#space').html('<p>Unable to Locate You.</p>bv');
+    $('#weather').html('<p>Unable to Locate You.</p>bv');
   }
 }());

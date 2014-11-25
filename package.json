@@ -4,7 +4,8 @@
   "description": "",
   "main": "sever.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "start": "npm run nodemon server.js"
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +15,9 @@
   "devDependencies": {
     "express": "^4.10.2",
     "grunt": "^0.4.5",
-    "mongoose": "^3.8.19"
+    "mongoose": "^3.8.19",
+    "browserify": "^6.3.2",
+    "nodemon": "^1.2.1",
+    "watchify": "^2.1.1"
   }
 }
