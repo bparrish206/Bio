@@ -2,22 +2,25 @@ body {
   background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-1-full.jpg');
 }
 
-#content {
+#tabs {
   background-color: #F0EAD6;
-  margin:-1px 225px 0px 225px;
+  color:#F0EAD6;
   border: 4px ridge #001F3F;
   text-align: center;
-  padding:25px;
+  margin: 15px;
+  display:inline-block;
 }
 
-content p {
-    text-align: center;
-    padding: 20px;
+# tabs-1{
+  background-color: #F0EAD6;
 }
 
-
-img {
+#headshot {
   border: 4px #001F3F;
+  border-radius: 35px;
+  float:right;
+  margin:25px;
+  display:inline-block;
 }
 
 .ui-tabs-vertical { width: 55em; }
