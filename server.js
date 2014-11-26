@@ -17,6 +17,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+require('./routes/routes')(app);
+
 app.use(express.static(__dirname + '/public'));
 
 app.set('port', process.env.PORT || 8000);
