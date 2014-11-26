@@ -32,17 +32,19 @@
 </div>
 <div id="content">
 <h1> About Brent</h1>
+
 <p> When I'm not writing code I love sports and the being outdoors.</p>
 
 <p> As a native of the Washington DC area, I love all DC sports teams even though they continue to brake my heart.</p>
 
 <p> In a previous life I worked in politics.</p>
+<script>
+$.post('/about', function(data){
+  $('#content').append("Why I left?  From the Huffington Post: " + data.chart + " " + data.date + " " + data.choice + " " + data.value);
+});</script>
 
 <p> Now I'm pursueing more positive endevers, I still like to keep up to date.</p>
 
-<div id="show">
-  <p id="politics">  </p>
-</div>
 </div>
 <script src="flow.js"</script>
 </body>
