@@ -17,11 +17,21 @@ h1 {
 }
 
 #mt {
-  display: inline-block;
-  margin-left: 5px;
-  float: left;
-  border-radius: 25px;
+  display: inline;
+  float: right;
+  display:block;
+  border-radius: 35px;
+  margin:15px;
 }
+
+#headshot {
+  border: 4px #001F3F;
+  border-radius: 35px;
+  float:left;
+  margin:15px;
+  display:block;
+}
+
 
 #navbar {
 background-color:#001F3F;
@@ -37,7 +47,7 @@ text-align: center;
 
 #box p {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 background {
