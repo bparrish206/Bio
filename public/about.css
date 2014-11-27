@@ -7,20 +7,40 @@ body {
   color:#F0EAD6;
   border: 4px ridge #001F3F;
   text-align: center;
-  margin: 15px;
+  margin: 0px 225px 0px 225px;
   display:inline-block;
-}
-
-# tabs-1{
-  background-color: #F0EAD6;
 }
 
 #headshot {
   border: 4px #001F3F;
   border-radius: 35px;
   float:right;
-  margin:25px;
-  display:inline-block;
+  margin:15px;
+  display:block;
+}
+
+
+#navbar {
+background-color:#001F3F;
+text-align: center;
+display:block;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  margin: 0 0 2px 0;
+}
+
+ul li a{
+  color:#FF851B;
+  font-size:130%;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color:#FF4136;
 }
 
 .ui-tabs-vertical { width: 55em; }

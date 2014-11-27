@@ -30,7 +30,8 @@ app.post('/about', function(req, res){
       var choice = est[1].choice;
       var value = est[1].value;
       var date = purlData.body.last_updated;
-    res.json({chart: title, date: date, choice: choice, value: value});
+      var rdate = date.slice(0,10);
+    res.json({chart: title, date: rdate, choice: choice, value: value});
   });
 });
 
