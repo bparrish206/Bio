@@ -1,0 +1,26 @@
+body {
+  background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-1-full.jpg');
+}
+
+#navbar {
+background-color:#001F3F;
+text-align: center;
+display:block;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  margin: 0 0 2px 0;
+}
+
+ul li a{
+  color:#FF851B;
+  font-size:130%;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color:#FF4136;
+}
