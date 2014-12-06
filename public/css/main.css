@@ -26,10 +26,9 @@ h1 {
 
 #headshot {
   border: 4px #001F3F;
-  border-radius: 35px;
-  float:left;
-  margin:15px;
-  display:block;
+  border-radius: 50%;
+  float:right;
+  display:inline;
 }
 
 
@@ -47,7 +46,7 @@ text-align: center;
 
 #box p {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 background {
