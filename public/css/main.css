@@ -1,5 +1,10 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
+  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
 .main-header {
@@ -43,6 +48,7 @@ h1 {
   border-radius: 50%;
   float:right;
   display:block;
+  margin-right:20px;
 }
 
 
@@ -60,8 +66,9 @@ text-align: center;
 
 #box p {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
+#box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Droid Sans'; }
 
 background {
 background-color:#ffffff;
