@@ -88,7 +88,7 @@ ul li a{
 }
 
 ul li a:hover {
-  color:#FFDC00;
+  color:#FFB000;
 }
 label, type[submit] {
   display: block;
@@ -100,7 +100,7 @@ label, type[submit] {
   display: block;
   text-align: center;
   margin: 15px;
-  background-color: #dad295;
+  background-color: #F0EAD6;
   border-radius:25px;
   border: 1px solid #001F3F;
 }
@@ -110,7 +110,7 @@ label, type[submit] {
   float:right;
   margin:15px;
   text-align: center;
-  background-color: #dad295;
+  background-color: #F0EAD6;
   border-radius:25px;
   border: 1px solid #001F3F;
 }

@@ -1,5 +1,6 @@
 body {
-  background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-1-full.jpg');
+  background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
+  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
 #navbar {
@@ -22,7 +23,7 @@ ul li a{
 }
 
 ul li a:hover {
-  color:#FF4136;
+  color:#FFB000;
 }
 
 .ribbon {
