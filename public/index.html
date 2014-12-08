@@ -3,18 +3,21 @@
     <meta charset="utf-8">
     <title> Brent Parrish</title>
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d,s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if(d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div id="header">
-    <h1> Brent Parrish's page</h1>
+    <header class="main-header " style="background-image: url(https://ununsplash.imgix.net/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?q=75&fm=jpg&s=a7538e1162bc4239180bb02813de4739)">
+      <nav class="main-nav overlay clearfix">
+      </nav>
+      <div class="vertical">
+        <div class="main-header-content inner">
+          <img id='headshot' src='https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b1/0d7/3dc3b95.jpg' style="width:150px;height:150px">
+          <h1> Brent Parrish's page</h1>
+          <h2 class="page-description">Web Development </h2>
+        </div>
+      </div>
+    </header>
+
   <div id="navbar">
     <ul>
       <li> <a href = 'about.html'> About</a></li>
@@ -22,7 +25,6 @@
       <li> <a href = 'contact.html'> Contact</a></li>
     </ul>
       </div>
-    </div>
 
 <aside id ="weather">
   <h5>Current Seattle Weather</h5>
@@ -42,12 +44,11 @@
 </form>
 </aside>
 <div id="box">
-  <img id='headshot' src='https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b1/0d7/3dc3b95.jpg'>
     <p> I’m a web developer with a background in fundraising that now focuses my passion on building apps and web sites, that make life better for the user.</p>
 
     <p> As a full stack web developer I enjoy working on front and backend projects.  My most recent work came doing the backend for an ios meetup style app that connected users over text message.  It was done with Node.js, express and a mongodb.  You can find links in my portfolio.
     </p>
-<img id="mt" src='https://ununsplash.imgix.net/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?q=75&fm=jpg&s=a7538e1162bc4239180bb02813de4739' style="width:200px;height:200px">
+
     <p> Code rawks!  I love APIs!!!  </p>
 
     <p> Love is all there is!!!!</p>
@@ -58,6 +59,9 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 <script src="js/flow.js"</script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+<div id="fb-root"></div>
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="1" data-show-faces="false" data-action="recommend"></div>
 <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
 <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

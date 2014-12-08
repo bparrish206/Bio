@@ -6,6 +6,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-sass');
 
@@ -59,30 +60,33 @@ module.exports = function(grunt){
       }
     },
 
-    watch: {
-      sass: {
-        files: {'public/css/main.css':'public/scss/main.scss'},
-        tasks: ['sass:dev']
+    express: {
+      options: {
+        output: 'listening'
       },
-      express: {
-        files:  [ 'server.js' ],
-        tasks:  [ 'express:dev' ],
+
+      dev: {
         options: {
-          spawn: false
+          script: 'server.js'
         }
       },
-      app: {
-        files: [ 'public/js**/*.js' ],
-        tasks: [ 'browserify:dev' ]
-      },
-      test: {
-        files: [ 'public/js**/*.js', 'test/front-end/**/*.js'],
-        tasks: [ 'build:dev', 'browserify:frontEndTest', 'karma:unit']
+      prod: {
+        options: {
+          script: 'server.js',
+          node_env: 'production'
+        }
+      }
+    },
+
+    watch: {
+      scripts: {
+        files: ['public/'],
+        tasks: ['express:dev']
       }
     }
-
   });
   grunt.registerTask('build:dev', ['sass', 'clean:dev', 'browserify:dev', 'copy:dev']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('default', ['test', 'watch']);
+  grunt.registerTask('server', ['express:dev', 'watch']);
 };
