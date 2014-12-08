@@ -51,7 +51,6 @@ h1 {
   margin-right:20px;
 }
 
-
 #navbar {
 background-color:#001F3F;
 text-align: center;
@@ -89,9 +88,8 @@ ul li a{
 }
 
 ul li a:hover {
-  color:#FF4136;
+  color:#FFDC00;
 }
-
 label, type[submit] {
   display: block;
   margin: 5px;
