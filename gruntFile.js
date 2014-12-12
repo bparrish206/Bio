@@ -1,7 +1,6 @@
 "use strict";
 
 module.exports = function(grunt){
-
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -14,7 +13,8 @@ module.exports = function(grunt){
     sass:{
       compile: {
         files: {
-          'public/css/main.css':'public/scss/main.scss'
+          'public/css/main.css':'public/scss/main.scss',
+          'public/css/port.css':'public/scss/port.scss'
         }
       }
     },
@@ -82,10 +82,17 @@ module.exports = function(grunt){
       scripts: {
         files: ['public/'],
         tasks: ['express:dev']
+    },
+
+    livereload: {
+      files: ['/public'],
+      options: {
+        livereload: true
       }
     }
+  }
   });
-  grunt.registerTask('build:dev', ['sass', 'clean:dev', 'browserify:dev', 'copy:dev']);
+  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('default', ['test', 'watch']);
   grunt.registerTask('server', ['express:dev', 'watch']);
