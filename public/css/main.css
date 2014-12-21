@@ -105,6 +105,10 @@ label, type[submit] {
   border: 1px solid #001F3F;
 }
 
+#signUp form input {
+  background-color: white;
+}
+
 #weather {
   display:block;
   float:right;
