@@ -5,7 +5,7 @@ var request = require('superagent');
 module.exports = function(app){
 
   app.post('/', function(req, res){
-  var url = "http://api.wunderground.com/api/" + process.env.APIKEY + "/geolookup/conditions/q/" + 'WA/Seattle'+ ".json";
+  var url = "http://api.wunderground.com/api/" + '828e3a84bb61c1a2' + "/geolookup/conditions/q/" + 'WA/Seattle'+ ".json";
   request
     .get(url)
     .end(function (err, urlData){
