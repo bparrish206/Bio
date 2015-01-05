@@ -1,6 +1,5 @@
-.body {
+body {
   background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
-  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
 #navbar {
@@ -20,24 +19,35 @@ ul li a{
   color:#FF851B;
   font-size:130%;
   text-decoration: none;
+  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
 ul li a:hover {
   color:#FFB000;
 }
 
+#skills {
+  text-align: center;
+  display: block;
+  width: 50%;
+  border:2px gray solid;
+  margin:auto;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
 .ribbon {
   font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
-  width: 50%;
-
-  position: relative;
+  width: 100%;
   background: #ba89b6;
+  position: relative;
   color: #fff;
   text-align: center;
-  padding: 1em 2em; /* Adjust to suit */
-  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  padding: 1em 1em; /* Adjust to suit */
+  margin:auto -1em;/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
   content: "";
@@ -53,7 +63,7 @@ ul li a:hover {
   border-left-color: transparent;
 }
 .ribbon:after {
-  right: -2em;
+  right: -2.25em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
@@ -74,12 +84,21 @@ ul li a:hover {
   border-width: 1em 1em 0 0;
 }
 
-.ribbon .ribbon-content:hover {
-  background: #2ECC40;
+.ribbon-content {
+  font-size: 110%;
 }
 
 .col-md-3 {
   margin: 200px;
   border: 3px solid grey;
+}
 
+button {
+  background-color: #0074D9;
+
+}
+
+button a {
+  text-decoration:none;
+  color:#ffffff;
 }
