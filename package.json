@@ -2,10 +2,10 @@
   "name": "bio",
   "version": "1.0.0",
   "description": "",
-  "main": "sever.js",
+  "main": "server.js",
   "scripts": {
     "test": "grunt",
-    "start": "node server" 
+    "start": "npm start"
   },
   "author": "",
   "license": "MIT",
