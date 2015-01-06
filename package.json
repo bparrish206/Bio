@@ -5,7 +5,7 @@
   "main": "sever.js",
   "scripts": {
     "test": "grunt",
-    "start": "node server.js" 
+    "start": "node server" 
   },
   "author": "",
   "license": "MIT",
