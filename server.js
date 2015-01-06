@@ -1,7 +1,6 @@
 'use strict';
 
 var express = require('express');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var app = express();
 
@@ -11,11 +10,6 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   console.log('connected to db');
 });
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 
 require('./routes/routes')(app);
 
