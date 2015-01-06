@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "grunt",
-    "start": "npm start"
+    "start": "node server"
   },
   "author": "",
   "license": "MIT",
