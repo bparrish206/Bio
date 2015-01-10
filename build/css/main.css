@@ -60,7 +60,6 @@ h1 {
   background-color:#DDDDDD;
   margin:-1px 225px 0px 225px;
   border: 2px solid #001F3F;
-  border-radius:25px;
 }
 
 #box p {
@@ -101,8 +100,9 @@ label, type[submit] {
   text-align: center;
   margin: 15px;
   background-color: #F0EAD6;
-  border-radius:25px;
+  border-radius:5px;
   border: 1px solid #001F3F;
+  padding:10px;
 }
 
 #signUp form input {
@@ -115,7 +115,7 @@ label, type[submit] {
   margin:15px;
   text-align: center;
   background-color: #F0EAD6;
-  border-radius:25px;
+  border-radius:5px;
   border: 1px solid #001F3F;
 }
 
