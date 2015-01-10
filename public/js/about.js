@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $( "#tabs" ).tabs({
-    event: "mouseover"
+    event: "click" 
   });
 
   $.post('/about', function(data){
