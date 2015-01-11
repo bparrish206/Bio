@@ -75,7 +75,7 @@ ul li {
   display: inline-block;
   padding: 5px 20px 5px 20px;
   text-align: center;
-  margin: 0 0 2px 0;
+  margin: 2px 0 2px 0;
 }
 
 ul li a{
@@ -101,7 +101,7 @@ label, type[submit] {
   background-color: #F0EAD6;
   border-radius:5px;
   border: 1px solid #001F3F;
-  padding:10px;
+  padding:5px;
 }
 
 #signUp form input {
