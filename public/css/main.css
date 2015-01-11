@@ -60,18 +60,16 @@ h1 {
   background-color:#DDDDDD;
   margin:-1px 225px 0px 225px;
   border: 2px solid #001F3F;
+  font-family:comic;
+  font-size:60%;
 }
 
 #box p {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
-#box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Droid Sans'; }
+#box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
 
-background {
-  background-color:#ffffff;
-
-}
 
 ul li {
   display: inline-block;
@@ -98,6 +96,7 @@ label, type[submit] {
   float:left;
   display: block;
   text-align: center;
+  font-family:comic;
   margin: 15px;
   background-color: #F0EAD6;
   border-radius:5px;
@@ -109,11 +108,20 @@ label, type[submit] {
   background-color: white;
 }
 
+button {
+  padding:5px;
+  background:#0074D9;
+  color:#ffffff;
+}
+
+
 #weather {
   display:block;
   float:right;
   margin:15px;
   text-align: center;
+  font-family:comic;
+  font-size:60%;
   background-color: #F0EAD6;
   border-radius:5px;
   border: 1px solid #001F3F;
