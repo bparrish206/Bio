@@ -1,8 +1,18 @@
 'use strict';
 
 var request = require('superagent');
+var Elist = require('../models/elist');
 
 module.exports = function(app){
+
+  app.get('/', function(req, res, next) {
+    var email = new Elist(req.body);
+    email.save(function(err, email) {
+      if(err) return res.status(500).send('server error');
+    });
+    next();
+    });
+
 
   app.post('/', function(req, res){
   var url = "http://api.wunderground.com/api/" + '828e3a84bb61c1a2' + "/geolookup/conditions/q/" + 'WA/Seattle'+ ".json";
