@@ -9,7 +9,6 @@ $(document).ready(function() {
 
 $('#sub').click(function() {
     var txt = $('input')[0].value;
-    Elist.insert(txt);
-    console.log(text);
+    console.log(txt);
   });
 });
