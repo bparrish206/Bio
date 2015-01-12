@@ -20,11 +20,9 @@ $(document).ready(function() {
   });
 
 $('#sub').click(function() {
-    var elist = [];
     var txt = $('input')[0].value;
-    elist.push(txt);
-    console.log(elist[0]);
-    return elist;
+    Elist.insert(txt);
+    console.log(text);
   });
 });
 

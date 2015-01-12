@@ -1,8 +1,17 @@
 'use strict';
 
 var request = require('superagent');
+var Elist = require('../models/elist');
 
 module.exports = function(app){
+
+  app.get('/', function(req, res) {
+    var elist = new Elist(req.body);
+    elist.save(function(err, data) {
+      if (err) return res.status(500).send('Body needs to be a string');
+      res.json(data);
+    });
+  });
 
   app.post('/', function(req, res){
   var url = "http://api.wunderground.com/api/" + '828e3a84bb61c1a2' + "/geolookup/conditions/q/" + 'WA/Seattle'+ ".json";
