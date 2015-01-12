@@ -1,5 +1,6 @@
+'use strict';
+
 $(document).ready(function() {
-var elist = [];
   $.post('/', function(urlData){
     $('#temp').append('Temperature: ' + urlData.current_temps +'&deg;' +'F');
     $('#cond').append('Conditions: ' + urlData.conditions);
@@ -7,9 +8,10 @@ var elist = [];
   });
 
 $('#sub').click(function() {
-    var txt = $('#signUp');
-    elist.push(txt.body);
-    console.log(elist);
-    signUp = null;
+    var elist = [];
+    var txt = $('input')[0].value;
+    elist.push(txt);
+    console.log(elist[0]);
+    return elist;
   });
 });
