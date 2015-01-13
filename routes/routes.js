@@ -3,8 +3,8 @@
 var request = require('superagent');
 var Elist = require('../models/elist');
 var nodemailer = require('nodemailer');
-var list = ['brentparrish76@gmail.com'];
-var ct = 0;
+var list = [];
+var ct = list.length;
 
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -14,14 +14,6 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var mailOptions = {
-  from: 'Brent Parrish <brentparrish76@gmail.com>',
-  to: list[ct],
-  subject: 'Thank You!',
-  text: 'Thank you for signing up for my email list.',
-  html: '<p>Thank you for signing up for my email list.</p>'
-};
-
 module.exports = function(app){
 
   app.get('/', function(req, res, next) {
@@ -30,14 +22,22 @@ module.exports = function(app){
       if(err) return res.status(500).send('server error');
       console.log(email);
       list.push(email.email);
-      ct++;
       console.log(list);
+      console.log(ct);
+
+      var mailOptions = {
+        from: 'Brent Parrish <brentparrish76@gmail.com>',
+        to: email.email,
+        subject: 'Thank You!',
+        text: 'Thank you for signing up for my email list.  I send out semi regular updates and tips.  This is email is also the best way to contact me, so feel free to reach out.',
+        html: '<p>Thank you for signing up for my email list. I send out semi regular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</p>',
+      };
+
       transporter.sendMail(mailOptions, function(error, info) {
         if(error) console.log(error);
         else console.log("Message sent: " + info.response);
       });
-      res.json(email);
-      return email;
+      //res.json(email);
     });
     next();
     });
