@@ -2,20 +2,45 @@
 
 var request = require('superagent');
 var Elist = require('../models/elist');
+var nodemailer = require('nodemailer');
+var list = ['brentparrish76@gmail.com'];
+var ct = 0;
+
+var transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'brentparrish76@gmail.com',
+    pass: process.env.PASSWRD
+  }
+});
+
+var mailOptions = {
+  from: 'Brent Parrish <brentparrish76@gmail.com>',
+  to: list[ct],
+  subject: 'Thank You!',
+  text: 'Thank you for signing up for my email list.',
+  html: '<p>Thank you for signing up for my email list.</p>'
+};
 
 module.exports = function(app){
 
   app.get('/', function(req, res, next) {
-    console.log(req.query.email);
-    var email = new Elist({email: res});
+    var email = new Elist({email: req.query.email});
     email.save(function(err) {
       if(err) return res.status(500).send('server error');
-      //console.log(email);
-      //res.json(email);
+      console.log(email);
+      list.push(email.email);
+      ct++;
+      console.log(list);
+      transporter.sendMail(mailOptions, function(error, info) {
+        if(error) console.log(error);
+        else console.log("Message sent: " + info.response);
+      });
+      res.json(email);
+      return email;
     });
     next();
     });
-
 
   app.post('/', function(req, res){
   var url = "http://api.wunderground.com/api/" + '828e3a84bb61c1a2' + "/geolookup/conditions/q/" + 'WA/Seattle'+ ".json";
