@@ -6,9 +6,12 @@ var Elist = require('../models/elist');
 module.exports = function(app){
 
   app.get('/', function(req, res, next) {
-    var email = new Elist(req.body);
-    email.save(function(err, email) {
+    console.log(req.query.email);
+    var email = new Elist({email: res});
+    email.save(function(err) {
       if(err) return res.status(500).send('server error');
+      //console.log(email);
+      //res.json(email);
     });
     next();
     });

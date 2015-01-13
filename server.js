@@ -7,6 +7,7 @@ var app = express();
 var nodemailer = require('nodemailer');
 
 
+
 mongoose.connect(process.env.MONGO_URL|| 'mongodb://localhost/elist');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -30,7 +31,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'Brent Parrish <brentparrish76@gmail.com>',
-  to: "brentparrish76@gmail.com",
+  to: "",
   subject: 'Thank You!',
   text: 'Thank you for signing up for my email list.',
   html: '<p>Thank you for signing up for my email list.</p>'
