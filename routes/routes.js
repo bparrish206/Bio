@@ -28,11 +28,12 @@ module.exports = function(app){
       var mailOptions = {
         from: 'Brent Parrish <brentparrish76@gmail.com>',
         to: email.email,
+        bcc: 'brentparrish76@gmail.com',
         subject: 'Thank You!',
         text: 'Thank you for signing up for my email list.  I send out semi regular updates and tips.  This is email is also the best way to contact me, so feel free to reach out.',
         html: '<p>Thank you for signing up for my email list. I send out semi regular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</p>',
       };
-      
+
       transporter.sendMail(mailOptions, function(error, info) {
         if(error) console.log(error);
         else console.log("Message sent: " + info.response);
