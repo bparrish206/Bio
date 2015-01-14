@@ -109,9 +109,19 @@ label, type[submit] {
 }
 
 button {
-  padding:5px;
   background:#0074D9;
   color:#ffffff;
+  border-radius: .25em;
+  text-align: center;
+  padding: .4em;
+  border-top: none;
+  border-left: none;
+  border-right: .065em #006400 solid;
+  border-bottom: .065em #006400 solid;
+}
+
+button:hover {
+  background-color: #7FDBFF;
 }
 
 
