@@ -1,2 +1,2 @@
-This is a basic resume/ portfolio site.  I haven't focued on design to much but hope to pretty it up soon.
+This is a basic resume/ portfolio site http://bparrish.com/.  It is still a work in progress.  I'm also resisting the urge to use a fancy template and instead an building it all myself.  
 
