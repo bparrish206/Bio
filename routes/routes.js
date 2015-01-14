@@ -3,8 +3,6 @@
 var request = require('superagent');
 var Elist = require('../models/elist');
 var nodemailer = require('nodemailer');
-var list = [];
-var ct = list.length;
 
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -20,25 +18,19 @@ module.exports = function(app){
     var email = new Elist({email: req.query.email});
     email.save(function(err) {
       if(err) return res.status(500).send('server error');
-      console.log(email);
-      list.push(email.email);
-      console.log(list);
-      console.log(ct);
-
       var mailOptions = {
         from: 'Brent Parrish <brentparrish76@gmail.com>',
         to: email.email,
         bcc: 'brentparrish76@gmail.com',
         subject: 'Thank You!',
         text: 'Thank you for signing up for my email list.  I send out semiregular updates and tips.  This is email is also the best way to contact me, so feel free to reach out.',
-        html: '<body style="background-color:#b0c4de"><h3 style="color:white;text-shadow: 1px 1px #001F3F; padding:10px;">Thank you for signing up for my email list.  I send out semiregular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</h3> <p>Brent Parrish (bparrish.com)</p><p><a href="https://github.com/bparrish206">github.com/bparrish206</a></p><img src="https://unsplash.com/photos/7RIm0GqvvkM/download" style="width:225px;height:110px"/></body>'
+        html: '<body style="background-color:#b0c4de"><h3 style="color:white;text-shadow: 1px 1px #001F3F; padding:10px;">Thank you for signing up for my email list.  I send out semiregular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</h3> <p>Brent Parrish</p> <p>bparrish.com</p><p><a href="https://github.com/bparrish206">github.com/bparrish206</a></p><img src="https://unsplash.com/photos/7RIm0GqvvkM/download" style="width:225px;height:110px"/></body>'
       };
 
       transporter.sendMail(mailOptions, function(error, info) {
         if(error) console.log(error);
         else console.log("Message sent: " + info.response);
       });
-      //res.json(email);
     });
     next();
     });
