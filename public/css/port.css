@@ -45,7 +45,6 @@ button {
   border-left: none;
   border-right: .065em #006400 solid;
   border-bottom: .065em #006400 solid;
-  display:block;
   float:left;
   margin:1px;
 }
@@ -66,7 +65,6 @@ button:hover {
   padding:1px;
 }
 
-#projects p {
-  margin: 5px;
-  display:block;
+p {
+  padding:25px;
 }
