@@ -4,33 +4,38 @@ body {
 }
 
 #box {
-  background-color:#DDDDDD;
-  margin:15px 300px 15px 300px;
-  border: 2px solid #001F3F;
+  background-color:#ffffff;
+  border: 2px solid #ffffff;
   font-family:comic;
   font-size:60%;
-}
+  display:inline;
+  }
 
-
-#box p {
-  text-align: center;
+#box p:first-child {
+  text-align: left;
   padding: 5px;
 }
+
+#side {
+  margin-right:55px;
+  margin-left:775px;
+  float:right;
+  display:inline;
+  background-color:white;
+}
 #box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
-   
+
 #tabs {
   border: 4px ridge #001F3F;
   text-align: center;
-  margin: 25px 225px 0px 225px;
-  display:inline-block;
+  display:inline;
   font-size:16px;
+  float:left;
   border-radius:25px;
 }
 
 .ui-tabs.ui-widget-content {
-
   background: #F0EAD6;
-
   border: none;
 
 }
@@ -44,15 +49,6 @@ body {
 .ui-tabs
 {
   background: gray;
-}
-
-#tabs-4 h4 {
-  border: 2px solid #001F3F;
-  color: #0074D9;
-  padding:2px;
-  maring: 0px 250px 0px 250px;
-  border-radius:25px;
-  background-color: #DDDDDD;
 }
 
 #navbar {

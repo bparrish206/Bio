@@ -148,6 +148,8 @@ button {
   border-radius: .25em;
   text-align: center;
   padding: .4em;
+  font-family:comic;
+  font-size:75%;
   border-top: none;
   border-left: none;
   border-right: .065em #006400 solid;
