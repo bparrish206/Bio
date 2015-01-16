@@ -11,7 +11,6 @@ $(document).ready(function(){
 
 },{}],2:[function(require,module,exports){
 'use strict';
-var elist = [];
 
 $(document).ready(function() {
   $.post('/', function(urlData){
@@ -22,11 +21,17 @@ $(document).ready(function() {
 
 $('#sub').click(function() {
     var txt = $('input')[0].value;
-    elist.push(txt);
-    console.log(txt);
+    $.ajax({
+      type: 'GET',
+      url:'/',
+      data: {
+        email: txt
+      },
+      success: function(data) {
+      },
+      dataType: 'json',
+    });
   });
 });
-
-module.export = elist;
 
 },{}]},{},[1,2]);

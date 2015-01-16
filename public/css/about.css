@@ -3,6 +3,21 @@ body {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
+#box {
+  background-color:#DDDDDD;
+  margin:15px 300px 15px 300px;
+  border: 2px solid #001F3F;
+  font-family:comic;
+  font-size:60%;
+}
+
+
+#box p {
+  text-align: center;
+  padding: 5px;
+}
+#box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
+   
 #tabs {
   border: 4px ridge #001F3F;
   text-align: center;
