@@ -26,17 +26,13 @@ ul li a:hover {
   color:#FFB000;
 }
 
-
-
 h3 {
   text-decoration: underline;
 }
 
-
-
-.col-md-3 {
-  margin: 200px;
-  border: 3px solid grey;
+h4 {
+  text-align:left;
+  text-decoration: underline;
 }
 
 button {
@@ -49,7 +45,9 @@ button {
   border-left: none;
   border-right: .065em #006400 solid;
   border-bottom: .065em #006400 solid;
-
+  display:block;
+  float:left;
+  margin:1px;
 }
 
 button a {
@@ -59,4 +57,16 @@ button a {
 
 button:hover {
   background-color: #7FDBFF;
+}
+
+#projects {
+  background-color:white;
+  text-align:left;
+  border: 2px solid;
+  padding:1px;
+}
+
+#projects p {
+  margin: 5px;
+  display:block;
 }
