@@ -19,5 +19,6 @@ $('#sub').click(function() {
       },
       dataType: 'json',
     });
+    $('input').val('');
   });
 });

@@ -4,7 +4,7 @@ body {
 
 #navbar {
   background-color:#001F3F;
-  text-align: center;
+  text-align: left;
   display:block;
 }
 
@@ -40,7 +40,7 @@ button {
   color:#ffffff;
   border-radius: .25em;
   text-align: center;
-  padding: .4em;
+  padding: .5em;
   border-top: none;
   border-left: none;
   border-right: .065em #006400 solid;
@@ -66,5 +66,5 @@ button:hover {
 }
 
 p {
-  padding:25px;
+  padding:27px;
 }
