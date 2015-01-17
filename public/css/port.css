@@ -68,7 +68,16 @@ button:hover {
   }
 
 p {
-  padding:27px;
+  padding:27px 27px 0 27px;
+}
+
+#projectIcons {
+  text-align:center;
+}
+
+#projectIcons li {
+  display:inline-block;
+  padding:0px;
 }
 
 #icons {

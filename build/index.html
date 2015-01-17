@@ -1,23 +1,23 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="Seattle, Web Developer, JavaScript, Node, Angular, API, software developer, css, html, full-stack">
     <title> Brent Parrish</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
 
   </head>
   <body>
-
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+      <ul>
+        <li> <a href = 'about.html'> About</a></li>
+        <li> <a href = 'portfolio.html'> Portfolio</a></li>
+        <li> <a href = 'contact.html'> Contact</a></li>
+      </ul>
+    </div>
       <header class="main-header " style="background-image: url(https://ununsplash.imgix.net/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?q=75&fm=jpg&s=a7538e1162bc4239180bb02813de4739)">
-      <nav class="main-nav overlay clearfix">
-        <div id="navbar">
-          <ul>
-            <li> <a href = 'about.html'> About</a></li>
-            <li> <a href = 'portfolio.html'> Portfolio</a></li>
-            <li> <a href = 'contact.html'> Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+
       <div class="vertical">
         <div class="main-header-content inner">
           <a href='about.html'><img id='headshot' src='https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b1/0d7/3dc3b95.jpg' style="width:150px;height:150px"></a>
@@ -25,35 +25,45 @@
           <h2 class="page-description">Web Development </h2>
         </div>
       </div>
+
     </header>
 
-<aside id ="weather">
-  <h4>Current Seattle Weather</h4>
-  <p id ="temp">  </p>
-  <p id = "cond">  </p>
-</aside>
+    <aside id ="weather">
+      <h4>Current Seattle Weather</h4>
+      <p id ="temp">  </p>
+      <p id = "cond">  </p>
+    </aside>
+    <aside id="signUp">
+      <form>
+        <label for='signUp'> Email List</label>
+        <input type='text' id='signUp' placeholder="email@example.com">
+      </form>
+      <button id="sub"> Submit</button>
+    </aside>
 
-  <aside id="signUp">
-<form>
-  <label for='signUp'> Email List</label>
-  <input type='text' id='signUp' placeholder="email@example.com">
-</form>
-<button id="sub"> Submit</button>
-</aside>
-<div id="box">
-    <p> I’m a Web Developer with a background in fundraising that focuses on building apps and websites to make life better for others. </p>
-    <p> I started dabbling with code a few years ago as hobby.  My previous career was in political and nonprofit fundraising, so coding was a refreshing change of pace.  I started using free websites like Code Academy and just tinkering with it on my own.  The thrill of getting my code to work and the excitement of building things started to grow.</p>
-    <p>I took a couple Python classes at the UW Extension School, which I really enjoyed, but I decided to focus more on JavaScript.  In 2014, I successfully completed Code Fellows two-month intensive Full-Stack JavaScript Development Accelerator program and have been a Web Developer ever since.
-    </p>
+    <div id="skills">
+          <h2 class="stitle">Technical Skills</h2>
 
-  </div>
-<footer>@copyright protected, and I will find you!
-  <script src="//platform.linkedin.com/in.js" type="text/javascript">
-  lang: en_US</script>
-  <script type="IN/Share" data-counter="right"></script></footer>
+
+      <h3> Proficient</h3>
+      <p>JavaScript, Node.js, Express, Angular, AJAX, Git, Github, Chai, Mocha, Jasmine, Grunt, Jquery, HTML, CSS, </p>
+
+      <h3> Developing</h3>
+
+      <p>Sass, Mongodb, Python, Ember, Backbone, Jasime, Passport, Bcrypt, Browserify, Eskimo, Aerobatic, Meteor </p>
+    </div>
+
+<section id="icons"><a href='https://www.linkedin.com/profile/view?id=14406020&trk=nav_responsive_tab_profile'><img src="../logos/images.png"></a>
+  <a href="https://github.com/bparrish206"><img src="../logos/Octocat.jpg"></a>
+  <a href="https://twitter.com/bparrish"><img src="../logos/t_logo-a.png"></a>
+</section>
+<footer><p>  &copy; 2015 Brent Parrish
+  </p></footer>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+
 <script src="js/flow.js"></script>
 
 </body>

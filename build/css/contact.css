@@ -9,15 +9,35 @@ body {
   text-align: center;
   font-family:comic;
   font-size:60%;
-  margin: 0px 225px 0px 225px;
-  display:block;
-  padding:25px;
+  margin-left: 100px;
+  display:inline-block;
+  padding:5px;
   border-radius:25px;
+}
+
+#box a first-child {
+  margin-left:50px;
+}
+
+h4 {
+  text-decoration:underline;
+}
+
+#gen {
+  font-family:comic;
+  font-size:65%;
+  background-color:white;
+  text-align:left;
+  margin: 50px 250px 50px 100px;
+}
+
+#deets {
+  display:block;
 }
 
 #navbar {
 background-color:#001F3F;
-text-align: center;
+text-align: left;
 display:block;
 }
 
@@ -36,4 +56,20 @@ ul li a{
 
 ul li a:hover {
   color:#FFB000;
+}
+
+#icons {
+  text-align:center;
+  margin-top:100px;
+}
+
+footer {
+  background: #001F3F;
+  color: #FF851B;
+  text-align: center;
+}
+
+footer p {
+  padding:5px;
+  margin:10px;
 }
