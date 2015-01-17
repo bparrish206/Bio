@@ -131,12 +131,15 @@ button:hover {
   padding: 5px;
 }
 
+#icons {
+  text-align:center;
+  margin-top:100px;
+}
 
 footer {
   background: #001F3F;
   color: #FF851B;
   text-align: center;
-  margin-top:100px;
 }
 
 footer p {

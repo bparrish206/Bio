@@ -10,14 +10,18 @@ body {
   font-family:comic;
   font-size:60%;
   margin: 0px 225px 0px 225px;
-  display:block;
+  display:inline-block;
   padding:25px;
   border-radius:25px;
 }
 
+#deets {
+  display:block;
+}
+
 #navbar {
 background-color:#001F3F;
-text-align: left; 
+text-align: left;
 display:block;
 }
 
@@ -36,4 +40,20 @@ ul li a{
 
 ul li a:hover {
   color:#FFB000;
+}
+
+#icons {
+  text-align:center;
+  margin-top:100px;
+}
+
+footer {
+  background: #001F3F;
+  color: #FF851B;
+  text-align: center;
+}
+
+footer p {
+  padding:5px;
+  margin:10px;
 }
