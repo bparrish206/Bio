@@ -4,7 +4,7 @@ body {
 
 #navbar {
   background-color:#001F3F;
-  text-align: center;
+  text-align: left;
   display:block;
 }
 
@@ -26,71 +26,14 @@ ul li a:hover {
   color:#FFB000;
 }
 
-#skills {
-  text-align: center;
-  display: block;
-  width: 50%;
-  border:2px gray solid;
-  margin:auto;
-}
-
 h3 {
   text-decoration: underline;
+  margin-left:100px;
 }
 
-.ribbon {
-  font-size: 16px !important;
-  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-  width: 100%;
-  background: #ba89b6;
-  position: relative;
-  color: #fff;
-  text-align: center;
-  padding: 1em 1em; /* Adjust to suit */
-  margin:auto -1em;/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before, .ribbon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #986794;
-  z-index: -1;
-}
-.ribbon:before {
-  left: -2em;
-  border-right-width: 1.5em;
-  border-left-color: transparent;
-}
-.ribbon:after {
-  right: -2.25em;
-  border-left-width: 1.5em;
-  border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-style: solid;
-  border-color: #804f7c transparent transparent transparent;
-  bottom: -1em;
-}
-.ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
-}
-
-.ribbon-content {
-  font-size: 110%;
-}
-
-.col-md-3 {
-  margin: 200px;
-  border: 3px solid grey;
+h4 {
+  text-align:left;
+  text-decoration: underline;
 }
 
 button {
@@ -98,12 +41,13 @@ button {
   color:#ffffff;
   border-radius: .25em;
   text-align: center;
-  padding: .4em;
+  padding: .5em;
   border-top: none;
   border-left: none;
   border-right: .065em #006400 solid;
   border-bottom: .065em #006400 solid;
-
+  float:left;
+  margin:1px;
 }
 
 button a {
@@ -113,4 +57,41 @@ button a {
 
 button:hover {
   background-color: #7FDBFF;
+}
+
+#projects {
+  background-color:white;
+  text-align:left;
+  border: 2px solid;
+  padding:1px;
+  margin: 15px 100px 15px 100px;
+  }
+
+p {
+  padding:27px 27px 0 27px;
+}
+
+#projectIcons {
+  text-align:center;
+}
+
+#projectIcons li {
+  display:inline-block;
+  padding:0px;
+}
+
+#icons {
+  text-align:center;
+  margin-top:100px;
+}
+
+footer {
+  background: #001F3F;
+  color: #FF851B;
+  text-align: center;
+}
+
+footer p {
+  padding:5px;
+  margin:10px;
 }
