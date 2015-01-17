@@ -53,7 +53,7 @@ body {
 
 #navbar {
 background-color:#001F3F;
-text-align: left; 
+text-align: left;
 display:block;
 }
 
@@ -80,3 +80,21 @@ ul li a:hover {
 .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px;}
 .ui-tabs .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+
+#icons {
+  text-align:center;
+  display:block;
+  margin-top:100px;
+}
+
+footer {
+  background: #001F3F;
+  color: #FF851B;
+  text-align: center;
+}
+
+footer p {
+  padding:5px;
+  margin:10px;
+}

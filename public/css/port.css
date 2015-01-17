@@ -70,3 +70,19 @@ button:hover {
 p {
   padding:27px;
 }
+
+#icons {
+  text-align:center;
+  margin-top:100px;
+}
+
+footer {
+  background: #001F3F;
+  color: #FF851B;
+  text-align: center;
+}
+
+footer p {
+  padding:5px;
+  margin:10px;
+}
