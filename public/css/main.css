@@ -132,14 +132,14 @@ button:hover {
 }
 
 
-.footer {
+footer {
   background: #001F3F;
   color: #FF851B;
   text-align: center;
   margin-top:100px;
 }
 
-.footer p {
+footer p {
   padding:5px;
   margin:10px;
 }
