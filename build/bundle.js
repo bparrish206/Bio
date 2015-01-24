@@ -28,6 +28,7 @@ $('#sub').click(function() {
         email: txt
       },
       success: function(data) {
+
       },
       dataType: 'json',
     });
