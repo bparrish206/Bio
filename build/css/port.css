@@ -8,18 +8,20 @@ body {
   display:block;
 }
 
+.pure-menu {
+  background-color:#001F3F !important;
+}
+
 ul li {
   display: inline-block;
-  padding: 5px 20px 5px 20px;
   text-align: center;
-  margin: 0 0 2px 0;
 }
 
 ul li a{
   color:#FF851B;
-  font-size:130%;
-  text-decoration: none;
+  font-size:100%;
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
+  text-decoration: none;
 }
 
 ul li a:hover {
