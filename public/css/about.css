@@ -60,12 +60,6 @@ body {
   background: gray;
 }
 
-#navbar {
-background-color:#001F3F;
-text-align: left;
-display:block;
-}
-
 .pure-menu {
    background-color:#001F3F !important;
  }
