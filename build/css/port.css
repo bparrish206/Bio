@@ -2,12 +2,6 @@ body {
   background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
 }
 
-#navbar {
-  background-color:#001F3F;
-  text-align: left;
-  display:block;
-}
-
 .pure-menu {
   background-color:#001F3F !important;
 }
