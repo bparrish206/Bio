@@ -24,7 +24,7 @@ ul li a:hover {
 
 h3 {
   text-decoration: underline;
-  margin-left:100px;
+  margin-left:10% !important;
 }
 
 h4 {
@@ -43,16 +43,18 @@ button {
   border-right: .065em #006400 solid;
   border-bottom: .065em #006400 solid;
   float:left;
-  margin:1px;
+  margin:1px !important;
 }
 
 button a {
   text-decoration:none;
   color:#ffffff;
+  font-size:85%;
+  padding:5px;
 }
 
 button:hover {
-  background-color: #7FDBFF;
+  background-color: #328fe0;
 }
 
 #projects {
@@ -63,8 +65,9 @@ button:hover {
   margin: 15px 100px 15px 100px;
   }
 
-p {
-  padding:27px 27px 0 27px;
+#projects p {
+  display:block;
+  padding:5%;
 }
 
 #projectIcons {
@@ -73,7 +76,7 @@ p {
 
 #projectIcons li {
   display:inline-block;
-  padding:0px;
+  padding:1px;
 }
 
 #icons {
