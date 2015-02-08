@@ -23,6 +23,7 @@ body {
 #box p:first-child {
   text-align: left;
   padding: 5px;
+  color:#506c9f;
 }
 
 #side {
@@ -31,6 +32,8 @@ body {
   float:right;
   display:inline;
   background-color:white;
+  color:#506c9f;
+  line-height:125%;
 }
 #box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
 
