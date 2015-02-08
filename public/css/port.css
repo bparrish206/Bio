@@ -30,6 +30,7 @@ h3 {
 h4 {
   text-align:left;
   text-decoration: underline;
+  margin:10px !important;;
 }
 
 button {
@@ -44,6 +45,10 @@ button {
   border-bottom: .065em #006400 solid;
   float:left;
   margin:1px !important;
+}
+
+.tops {
+  margin-left:10px !important;
 }
 
 button a {
@@ -67,7 +72,7 @@ button:hover {
 
 #projects p {
   display:block;
-  padding:5%;
+  padding:4%;
 }
 
 #projectIcons {
