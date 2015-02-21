@@ -17,6 +17,7 @@ body {
   display:block;
   padding:5px;
   border-radius:25px;
+  margin-top:5%;
 }
 
 #box a first-child {
@@ -31,7 +32,9 @@ h4 {
   font-family:comic;
   font-size:70%;
   line-height:125%;
-  background-color:white;
+  background-image:linear-gradient(
+    to right,
+    white, #F0EAD6);
   text-align:left;
   display:block;
   padding:3%;
@@ -61,9 +64,15 @@ ul li a:hover {
   color:#FFB000;
 }
 
+#wrapper {
+  background:linear-gradient(#ccc, #506c9f);
+  padding:2%;
+  padding-bottom:35%;
+}
+
 #icons {
   text-align:center;
-  margin-top:35%;
+  margin-top:10%;
 }
 
 footer {
