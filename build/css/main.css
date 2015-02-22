@@ -80,23 +80,37 @@ ul li a:hover {
 label, type[submit] {
   display: block;
   margin: 5px;
+  font-weight: bold;
+  padding-top: 5px;
 }
 
 #signUp {
   float:left;
+  width:19.25%;
   display: block;
   text-align: center;
   font-family:comic;
   font-size:65%;
   margin: 15px;
   background-color: #F0EAD6;
+  background-image:linear-gradient(
+    to right,
+    #F0EAD6, white);
   border-radius:5px;
   border: 1px solid #001F3F;
   padding:5px;
 }
 
 #signUp form input {
-  background-color: white;
+  background: white !important;
+  width:80%;
+}
+
+#email {
+  text-align: center;
+  font-size: 80%;
+  padding: 3%;
+  font-style: italic;
 }
 
 button {
@@ -111,10 +125,11 @@ button {
   border-left: none;
   border-right: .065em #006400 solid;
   border-bottom: .065em #006400 solid;
+  margin-bottom: 11.5%;
 }
 
 button:hover {
-  background-color: #328fe0;  
+  background-color: #328fe0;
 }
 
 
@@ -129,6 +144,11 @@ button:hover {
   border-radius:5px;
   border: 1px solid #001F3F;
   padding: 5px;
+  height:200px;
+  width:200px;
+  background-image:linear-gradient(
+    to right,
+    #F0EAD6, white);
 }
 
 #icons {
