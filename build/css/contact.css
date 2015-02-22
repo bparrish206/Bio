@@ -3,6 +3,14 @@ body {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
+h2 {
+  border-bottom: 1px solid #aaa;
+  padding-top: 1%;
+  margin-top: -1%;
+}
+
+
+
 #box {
   background-color: #F0EAD6;
   border: 4px ridge #001F3F;
@@ -16,7 +24,7 @@ body {
   transform: translate(-50%, -50%);
   display:block;
   padding:5px;
-  border-radius:25px;
+  border-radius:5px;
   margin-top:5%;
 }
 
@@ -30,15 +38,13 @@ h4 {
 
 #gen {
   font-family:comic;
-  font-size:70%;
+  padding-top:0;
+  font-size:75%;
   line-height:125%;
-  background-image:linear-gradient(
-    to right,
-    white, #F0EAD6);
   text-align:left;
   display:block;
   padding:3%;
-  color:#506c9f;
+  color:white;
 }
 
 #deets {
