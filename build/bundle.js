@@ -21,6 +21,11 @@ $(document).ready(function() {
 
 $('#sub').click(function() {
     var txt = $('input')[0].value;
+    var vald = txt.indexOf('@');
+    var vald2 = txt.indexOf('.');
+    if(vald < 2 || vald2 < 2) {
+      alert("Valid emails are more useful.");
+    }
     $.ajax({
       type: 'GET',
       url:'/',
