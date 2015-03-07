@@ -26,6 +26,8 @@ h2 {
   padding:5px;
   border-radius:5px;
   margin-top:5%;
+  box-shadow: 4px 4px 4px #ccc;
+  padding: 2% 10%;
 }
 
 #box a first-child {
@@ -44,7 +46,7 @@ h4 {
   text-align:left;
   display:block;
   padding:3%;
-  color:white;
+  color:#0074D9;
 }
 
 #deets {
@@ -71,7 +73,7 @@ ul li a:hover {
 }
 
 #wrapper {
-  background:linear-gradient(#ccc, #506c9f);
+  background:white;
   padding:2%;
   padding-bottom:35%;
 }
