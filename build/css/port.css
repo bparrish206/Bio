@@ -68,6 +68,7 @@ button:hover {
   border: 2px solid;
   padding:1px;
   margin: 15px 100px 15px 100px;
+  box-shadow: 4px 4px 4px #ccc;
   }
 
 #projects p {

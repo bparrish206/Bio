@@ -48,7 +48,8 @@ h1 {
   font-family:comic;
   font-size:60%;
   background-color:#ffffff;
-}
+  box-shadow: 4px 4px 4px #ccc;
+  }
 
 .stitle {
   background: #ba89b6;
@@ -86,7 +87,7 @@ label, type[submit] {
 
 #signUp {
   float:left;
-  width:17.5%; 
+  width:17.5%;
   display: block;
   text-align: center;
   font-family:comic;
@@ -99,6 +100,7 @@ label, type[submit] {
   border-radius:5px;
   border: 1px solid #001F3F;
   padding:5px;
+  box-shadow: 4px 4px 4px #ccc;
 }
 
 #signUp form input {
@@ -149,6 +151,7 @@ button:hover {
   background-image:linear-gradient(
     to right,
     #F0EAD6, white);
+    box-shadow: 4px 4px 4px #ccc;
 }
 
 #icons {
