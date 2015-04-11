@@ -3,6 +3,12 @@ body {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
+
+.pure-menu a {
+  color:#ccc !important;
+}
+
+
 #cont {
   background-image: linear-gradient( #F0F8FF, white);
   display: inline-block;
@@ -14,8 +20,16 @@ h1 {
   font-family:comic;
   color:#0074D9;
   text-shadow: 2px 2px #AAAAAA;
-  padding-left: 5%;
+  padding-left: 2%;
   font-size:170%;
+}
+
+h2 {
+  border-top: 1px solid;
+  padding-top: 21px;
+  margin-top: 0 !important;
+  width: 102%;
+  margin-left: -17px !important;
 }
 
 #box {
@@ -52,12 +66,12 @@ h1 {
 #box p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
 
 #tabs {
-  border: 4px ridge #001F3F;
+  border: 1px ridge #001F3F;
   text-align: center;
   display:inline;
   font-size:16px;
   float:left;
-  border-radius:25px;
+  border-radius:5px;
   box-shadow: 4px 4px 4px #ccc;
 }
 

@@ -63,6 +63,10 @@ h1 {
   background-color:#001F3F !important;
 }
 
+.pure-menu a {
+  color:#ccc;
+}
+
 ul li {
   display: inline-block;
   text-align: center;
