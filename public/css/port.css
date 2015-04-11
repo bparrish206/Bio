@@ -6,6 +6,10 @@ body {
   background-color:#001F3F !important;
 }
 
+.pure-menu a {
+  color:#ccc !important;
+}
+
 ul li {
   display: inline-block;
   text-align: center;

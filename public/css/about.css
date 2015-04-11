@@ -3,6 +3,12 @@ body {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
+
+.pure-menu a {
+  color:#ccc !important;
+}
+
+
 #cont {
   background-image: linear-gradient( #F0F8FF, white);
   display: inline-block;

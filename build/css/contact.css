@@ -9,7 +9,9 @@ h2 {
   margin-top: -1%;
 }
 
-
+.pure-menu a {
+  color:#ccc;
+}
 
 #box {
   background-color: #F0EAD6;
