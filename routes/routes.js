@@ -3,6 +3,7 @@
 var request = require('superagent');
 var Elist = require('../models/elist');
 var nodemailer = require('nodemailer');
+var _ = require("underscore");
 
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
