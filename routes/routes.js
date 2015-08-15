@@ -62,7 +62,10 @@ app.post('/about', function(req, res){
       var value = est[1].value;
       var date = purlData.body.last_updated;
       var rdate = date.slice(0,10);
-    res.json({chart: title, date: rdate, choice: choice, value: value});
+      var test = _.pick(purlData.body, 'estimates_by_date');
+      var test1 = _.values(test);
+      var test2 = test1[0];
+    res.json({chart: title, date: rdate, choice: choice, value: value, test2: test2});
   });
 });
 

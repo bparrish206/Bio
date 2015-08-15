@@ -243,3 +243,10 @@ footer p {
       #F0EAD6, white);
       box-shadow: 4px 4px 4px #ccc;
     }
+
+
+#chart_div {
+height: 500px;
+width: 800px;
+margin: 3% 15%;
+}
