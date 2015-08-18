@@ -59,8 +59,8 @@ app.post('/about', function(req, res){
       if(err) throw err;
       var title = purlData.body.title;
       var est = purlData.body.estimates;
-      var choice = est[1].choice;
-      var value = est[1].value;
+      var choice = est[0].choice;
+      var value = est[0].value;
       var date = purlData.body.last_updated;
       var rdate = date.slice(0,10);
       var test = _.pick(purlData.body, 'estimates_by_date');
