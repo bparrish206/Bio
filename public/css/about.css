@@ -187,5 +187,16 @@ footer p {
 
 
 #chart_div {
-
+width: 500px;
 }
+
+#chart_div > div > div:nth-child(1) > div > svg > rect {
+    width: 470px;
+    height: 215px;
+}
+
+#chart_div > div > div:nth-child(1) > div > svg {
+  width: 500px;
+  height: 215px;
+}
+

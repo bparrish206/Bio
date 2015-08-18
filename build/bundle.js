@@ -35,8 +35,8 @@ $(document).ready(function(){
         });
 
         var options = {
-          isStacked: 'relative',
-          legend: {position: 'top', maxLines: 1},
+          isStacked: 'false',
+          legend: {position: 'right'},
           title: 'Obama Job Approval',
           hAxis: {title: 'Date', minValue: 0.0,  titleTextStyle: {color: '#333'}},
           vAxis: {minValue: 0.0}
