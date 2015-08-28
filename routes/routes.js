@@ -49,7 +49,6 @@ module.exports = function(app){
 
     res.send({location: "Seattle", current_temps: temp, conditions: cond, outside:icon });
   });
-});
 
 app.post('/about', function(req, res){
   var purl = 'http://elections.huffingtonpost.com/pollster/api/charts/obama-job-approval';
@@ -69,5 +68,4 @@ app.post('/about', function(req, res){
     res.json({chart: title, date: rdate, choice: choice, value: value, test2: test2});
   });
 });
-
-};
+});
