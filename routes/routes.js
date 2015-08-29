@@ -18,7 +18,7 @@ module.exports = function(app){
   app.get('/', function(req, res, next) {
     var legitEmail = req.query.email;
 
-    var email = new Elist(legitEmail ? {email: legitEmail} : console.log("loading"));
+    var email = new Elist(legitEmail != undefined ? {email: req.query.email} : console.log("loading"));
     email.save(function(err) {
       if(err) return res.status(500).send('server error');
       var mailOptions = {
