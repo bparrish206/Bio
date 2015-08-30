@@ -5,22 +5,27 @@ var Elist = require('../models/elist');
 var nodemailer = require('nodemailer');
 var _ = require("underscore");
 
+
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'brentparrish76@gmail.com',
-    pass: process.env.PASSWRD
+    pass: "Seattle1!76"
   }
 });
 
 module.exports = function(app){
 
   app.get('/', function(req, res, next) {
-    var legitEmail = req.query.email;
-
-    var email = new Elist(legitEmail ? {email: legitEmail} : console.log("loading"));
-    email.save(function(err) {
+    var realEmail = req.query.email;
+    var rem;
+    var email = new Elist();
+    email.save(function(err, email) {
       if(err) return res.status(500).send('server error');
+      if (realEmail != undefined){
+      rem = realEmail;
+      email.email = rem
+      }
       var mailOptions = {
         from: 'Brent Parrish <brentparrish76@gmail.com>',
         to: email.email,
@@ -29,6 +34,7 @@ module.exports = function(app){
         text: 'Thank you for signing up for my email list.  I send out semiregular updates and tips.  This is email is also the best way to contact me, so feel free to reach out.',
         html: '<body style="background-color:#b0c4de"><h3 style="color:white;text-shadow: 1px 1px #001F3F; padding:10px;">Thank you for signing up for my email list.  I send out semiregular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</h3> <p>Brent Parrish</p> <p>bparrish.com</p><p><a href="https://github.com/bparrish206">github.com/bparrish206</a></p><img src="https://unsplash.com/photos/7RIm0GqvvkM/download" style="width:225px;height:110px"/></body>'
     };
+
       console.log(email);
       transporter.sendMail(mailOptions, function(error, info) {
         if(error) console.log(error);
