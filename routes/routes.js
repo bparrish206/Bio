@@ -18,14 +18,15 @@ module.exports = function(app){
   app.get('/', function(req, res, next) {
     var realEmail = req.query.email;
     var rem;
-    var email = new Elist();
+    if (typeof realEmail != undefined) {
+    var email = new Elist({email: realEmail});
     email.save(function(err, email) {
       if(err) return res.status(500).send('server error');
-      if (realEmail != undefined){
-      rem = realEmail;
-      email.email = rem
-      }
-      var mailOptions = {
+    });
+  }
+
+    next();
+     var mailOptions = {
         from: 'Brent Parrish <brentparrish76@gmail.com>',
         to: email.email,
         bcc: 'brentparrish76@gmail.com',
@@ -39,8 +40,6 @@ module.exports = function(app){
         if(error) console.log(error);
         else console.log("Message sent: " + info.response);
       });
-    });
-    next();
     });
 
   app.post('/', function(req, res){
