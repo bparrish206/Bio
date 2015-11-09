@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('#temp').append('Temperature: ' + urlData.current_temps +'&deg;' +'F');
     $('#cond').append('Conditions: ' + urlData.conditions);
     $('#weather').append('<img src="'+urlData.outside+'">');
+    console.log(urlData.emails);
   });
 
 $('#sub').click(function() {

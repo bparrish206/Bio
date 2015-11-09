@@ -57,7 +57,7 @@ module.exports = function(app){
       var icon = parsedBody.current_observation.icon_url;
       var temp = parsedBody.current_observation.temp_f;
 
-    res.send({location: "Seattle", current_temps: temp, conditions: cond, outside:icon });
+    res.send({location: "Seattle", current_temps: temp, conditions: cond, outside:icon, emails:mails });
   });
 });
 
