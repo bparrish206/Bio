@@ -28,7 +28,7 @@ module.exports = function(app){
     next();
      var mailOptions = {
         from: 'Brent Parrish <brentparrish76@gmail.com>',
-        to: email.email,
+        to: realEmail,
         bcc: 'brentparrish76@gmail.com',
         subject: 'Thank You!',
         text: 'Thank you for signing up for my email list.  I send out semiregular updates and tips.  This is email is also the best way to contact me, so feel free to reach out.',
