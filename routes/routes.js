@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('superagent');
-var Elist = require('../models/elist');
+//var Elist = require('../models/elist');
 var nodemailer = require('nodemailer');
 var _ = require("underscore");
 
@@ -19,10 +19,10 @@ module.exports = function(app){
     var realEmail = req.query.email;
     var rem;
     if (typeof realEmail != undefined) {
-    var email = new Elist({email: realEmail});
-    email.save(function(err, email) {
-      if(err) return res.status(500).send('server error');
-    });
+    //var email = new Elist({email: realEmail});
+    //email.save(function(err, email) {
+      //if(err) return res.status(500).send('server error');
+    //});
   }
 
     next();
@@ -35,7 +35,7 @@ module.exports = function(app){
         html: '<body style="background-color:#b0c4de"><h3 style="color:white;text-shadow: 1px 1px #001F3F; padding:10px;">Thank you for signing up for my email list.  I send out semiregular updates and tips.  This email is also the best way to contact me, so feel free to reach out.</h3> <p>Brent Parrish</p> <p>bparrish.com</p><p><a href="https://github.com/bparrish206">github.com/bparrish206</a></p><img src="https://unsplash.com/photos/7RIm0GqvvkM/download" style="width:225px;height:110px"/></body>'
     };
 
-      console.log(email);
+      //console.log(email);
       transporter.sendMail(mailOptions, function(error, info) {
         if(error) console.log(error);
         else console.log("Message sent: " + info.response);
@@ -76,4 +76,3 @@ app.post('/about', function(req, res){
   });
 });
 };
-
