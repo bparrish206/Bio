@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('superagent');
-//var Elist = require('../models/elist');
+var Elist = [];
 var nodemailer = require('nodemailer');
 var _ = require("underscore");
 var mails = [];
@@ -14,17 +14,17 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-module.exports = function(app){
+module.exports = function(app) {
 
   app.get('/', function(req, res, next) {
     var realEmail = req.query.email;
     var rem;
     if (typeof realEmail != undefined) {
-  //  var email = new Elist({email: realEmail});
-    //email.save(function(err, email) {
-      //if(err) return res.status(500).send('server error');
-  //  });
-  //}
+    var email = new Elist({email: realEmail});
+    email.save(function(err, email) {
+      if(err) return res.status(500).send('server error');
+   });
+  }
 
     next();
      var mailOptions = {
