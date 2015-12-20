@@ -1,17 +1,20 @@
 
 #cont {
-  background-image: linear-gradient( #F0F8FF, white);
+  background-color: white;
   display: inline-block;
   width: 84.5%;
   margin: 4% 7%;
+  margin: 0% 7%;
 }
 
 .about h1 {
   font-family:comic;
   color:#0074D9;
-  text-shadow: 2px 2px #AAAAAA;
-  padding-left: 2%;
-  font-size:170%;
+  text-shadow: 1px 2px #AAAAAA;
+  position: relative;
+  left: 40rem;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .about h2 {
