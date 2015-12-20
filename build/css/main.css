@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background: url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
 }
 
@@ -12,7 +11,7 @@ body {
   text-align: center;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
-  height:450px;
+  height:800px;
   width: 100%;
   margin-bottom: 1em;
   display: table;
@@ -31,6 +30,12 @@ h1 {
   font-size:150%;
 }
 
+h2.page-description {
+    POSITION: relative;
+    bottom: 20px;
+    left: 155px;
+}
+
 #headshot {
   border: 4px #001F3F;
   border-radius: 50%;
@@ -43,12 +48,13 @@ h1 {
   text-align: center;
   display: block;
   width: 50.5%;
-  border:2px gray solid;
-  margin:auto;
-  font-family:comic;
-  font-size:60%;
-  background-color:#ffffff;
-  box-shadow: 4px 4px 4px #ccc;
+  border: 1px gray solid;
+  margin: auto;
+  position: relative;
+  top: 7px;
+  font-family: comic;
+  font-size: 60%;
+  background-color: #ffffff;
   }
 
 .stitle {
@@ -64,13 +70,16 @@ h1 {
 }
 
 .pure-menu a {
-  color:#ccc;
+  color:#fff;
+}
+
+.pure-menu li a:hover, .pure-menu li a:focus {
+    background: #002953;
 }
 
 ul li {
   display: inline-block;
   text-align: center;
-
 }
 
 ul li a{;
@@ -79,7 +88,7 @@ ul li a{;
 }
 
 ul li a:hover {
-  color:#FFB000;
+  color:#ccc;
 }
 
 label, type[submit] {
@@ -90,6 +99,7 @@ label, type[submit] {
 }
 
 #signUp {
+  display: none !important;
   float:left;
   width:17.5%;
   display: block;
@@ -138,24 +148,24 @@ button:hover {
   background-color: #328fe0;
 }
 
-
 #weather {
-  display:block;
   float:right;
-  margin:15px;
+  height: 54px;
+  width: 42%;
   text-align: center;
   font-family:comic;
-  font-size:60%;
-  background-color: #F0EAD6;
-  border-radius:5px;
-  border: 1px solid #001F3F;
-  padding: 5px;
-  height:200px;
-  width:200px;
+  font-size:50%;
   background-image:linear-gradient(
     to right,
     #F0EAD6, white);
-    box-shadow: 4px 4px 4px #ccc;
+}
+
+#weather li {
+  margin: 0% 0.7% 8%;
+}
+
+#weather li:nth-child(1) {
+  font-weight: bold;
 }
 
 #icons {

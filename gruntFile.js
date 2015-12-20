@@ -13,8 +13,7 @@ module.exports = function(grunt) {
     sass:{
       compile: {
         files: {
-          'public/css/main.css':'public/scss/main.scss',
-          'public/css/port.css':'public/scss/port.scss'
+          'public/css/styles.css':'public/scss/styles.scss',
         }
       }
     },
@@ -92,7 +91,7 @@ module.exports = function(grunt) {
     }
   }
   });
-  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev']);
+  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev', 'sass']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('default', ['test', 'watch']);
   grunt.registerTask('server', ['express:dev', 'watch']);
