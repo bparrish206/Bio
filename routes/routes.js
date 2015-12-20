@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('superagent');
-var Elist = require('../models/elist');
+var Elist = {};
 var nodemailer = require('nodemailer');
 var _ = require("underscore");
 var mails = [];
