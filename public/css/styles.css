@@ -133,26 +133,29 @@ button:hover {
 
 #weather {
   float: right;
-  height: 54px;
+  height: 44px;
   width: 42%;
   text-align: center;
   font-family: comic;
   font-size: 60%;
+  padding: 5px;
   background-image: linear-gradient(to right, #F0EAD6, white); }
 
 #weather li {
-  margin: 0% 0.7% 8%; }
+  margin: 0% 9% 8% -29px; }
 
 #weather li:nth-child(1) {
   font-weight: bold; }
 
 li#cond {
   position: relative;
-  bottom: 48px; }
+  bottom: 48px;
+  left: 116px; }
 
 #weather img {
   position: relative;
-  bottom: 35px; }
+  bottom: 57px;
+  left: 109px; }
 
 #icons {
   text-align: center;
@@ -170,9 +173,8 @@ footer p {
 #cont {
   background-image: linear-gradient(#F0F8FF, white);
   display: inline-block;
-  border: 1px solid #AAAAAA;
   width: 84.5%;
-  margin: auto; }
+  margin: 4% 7%; }
 
 .about h1 {
   font-family: comic;
@@ -318,6 +320,11 @@ div#tabs-2 img {
   text-decoration: underline;
   margin: 10px !important; }
 
+.port .heading {
+  margin: 3% 10%;
+  font-size: 110%;
+  text-align: center; }
+
 .port button {
   background: #0074D9;
   color: #ffffff;
@@ -368,7 +375,7 @@ div#tabs-2 img {
 .contact h2 {
   border-bottom: 1px solid #aaa;
   padding-top: 1%;
-  margin-top: -1%;
+  margin: -1% 5% 0;
   font-size: 114%; }
 
 .contact #box {
@@ -403,6 +410,7 @@ div#tabs-2 img {
   text-align: left;
   display: block;
   padding: 3% 0;
+  margin: 1% 5%;
   color: #0074D9; }
 
 #deets {

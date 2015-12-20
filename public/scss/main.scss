@@ -155,18 +155,19 @@ button:hover {
 
 #weather {
   float:right;
-  height: 54px;
+  height: 44px;
   width: 42%;
   text-align: center;
   font-family:comic;
   font-size:60%;
+  padding: 5px;
   background-image:linear-gradient(
     to right,
     #F0EAD6, white);
 }
 
 #weather li {
-  margin: 0% 0.7% 8%;
+  margin: 0% 9% 8% -29px;
 }
 
 #weather li:nth-child(1) {
@@ -176,10 +177,13 @@ button:hover {
 li#cond {
 position: relative;
 bottom: 48px;
+left: 129px;
 }
+
 #weather img {
 position: relative;
-bottom: 35px;
+bottom: 57px;
+left: 109px;
 }
 
 #icons {
