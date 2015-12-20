@@ -1,12 +1,3 @@
-body {
-  background:url('http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg');
-  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
-}
-
-
-.pure-menu a {
-  color:#ccc !important;
-}
 
 #cont {
   background-image: linear-gradient( #F0F8FF, white);
@@ -16,7 +7,7 @@ body {
   margin: auto;
 }
 
-h1 {
+.about h1 {
   font-family:comic;
   color:#0074D9;
   text-shadow: 2px 2px #AAAAAA;
@@ -24,7 +15,7 @@ h1 {
   font-size:170%;
 }
 
-h2 {
+.about h2 {
   border-top: 1px solid;
   padding-top: 21px;
   margin-top: 0 !important;
@@ -35,9 +26,9 @@ h2 {
 #box {
   background-color:#ffffff;
   border: 2px solid #ffffff;
-  font-family:comic;
-  font-size:60%;
-  display:inline;
+  font-family: comic;
+  font-size: 96%;
+  display: inline;
   }
 
 #tabs-4 h4 {
@@ -76,7 +67,6 @@ h2 {
   line-height:125%;
 }
 
-
 #box > p:nth-child(1) {
   margin:0;
 }
@@ -113,21 +103,6 @@ h2 {
    background-color:#001F3F !important;
  }
 
-ul li {
-  display: inline-block;
-  text-align: center;
-}
-
-ul li a{
-  color:#FF851B;
-  font-size:100%;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  color:#FFB000;
-}
-
 #hike {
   color: #FF851B;
   text-decoration:none;
@@ -136,7 +111,6 @@ ul li a:hover {
 #hike:hover {
   text-decoration:underline;
 }
-
 
 .ui-tabs-vertical { width: 55em; }
 .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; border: none; }
@@ -147,55 +121,4 @@ ul li a:hover {
 
 div#tabs-2 img {
   padding:0 10px;
-}
-
-#icons {
-  text-align:center;
-  display:block;
-  margin-top:5%;
-}
-
-footer {
-  background: #001F3F;
-  color: #FF851B;
-  text-align: center;
-}
-
-footer p {
-  padding:5px;
-  margin:10px;
-}
-
-  button {
-    background:#0074D9;
-    color:#ffffff;
-    border-radius: .25em;
-    text-align: center;
-    padding: .4em;
-    font-family:comic;
-    font-size:75%;
-    border-top: none;
-    border-left: none;
-    border-right: .065em #006400 solid;
-    border-bottom: .065em #006400 solid;
-    margin-bottom: 11.5%;
-  }
-
-  button:hover {
-    background-color: #328fe0;
-  }
-
-
-#chart_div {
-width: 500px;
-}
-
-#chart_div > div > div:nth-child(1) > div > svg > rect {
-    width: 470px;
-    height: 215px;
-}
-
-#chart_div > div > div:nth-child(1) > div > svg {
-  width: 500px;
-  height: 215px;
 }

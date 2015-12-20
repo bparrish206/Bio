@@ -1,3 +1,68 @@
+.port {
+  background-color: #e7e9ec;
+}
+
  .ribbon:hover {
    color:#2ECC40
+ }
+
+.port h3 {
+   text-decoration: underline;
+   margin-left:10% !important;
+ }
+
+.port h4 {
+   text-align:left;
+   text-decoration: underline;
+   margin:10px !important;;
+ }
+
+.port button {
+   background:#0074D9;
+   color:#ffffff;
+   border-radius: .25em;
+   text-align: center;
+   padding: .5em;
+   border-top: none;
+   border-left: none;
+   border-right: .065em #006400 solid;
+   border-bottom: .065em #006400 solid;
+   float:left;
+   margin: 1px -5px 0 10px;
+ }
+
+.port button a {
+   text-decoration:none;
+   color:#ffffff;
+   font-size:85%;
+   padding:5px;
+ }
+
+.port button:hover {
+   background-color: #328fe0;
+ }
+
+ #projects {
+   background-color:white;
+   text-align:left;
+   border: 1px solid;
+   padding:1px;
+   margin: 15px 100px 15px 100px;
+   box-shadow: 4px 4px 4px #ccc;
+   }
+
+ #projects p {
+   display:block;
+   padding:4%;
+   color:#506c9f;
+ }
+
+ #projectIcons {
+   text-align:center;
+   display: none;
+ }
+
+ #projectIcons li {
+   display:inline-block;
+   padding:1px;
  }
