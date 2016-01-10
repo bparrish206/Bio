@@ -59,15 +59,6 @@ h2.page-description {
   font-family: comic;
   font-size: 60%;
   background-color: #ffffff; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    #skills {
-      width: 65%; } }
-  @media (min-width: 1025px) {
-    #skills {
-      width: 55%; } }
-  @media (min-width: lrgDesktop-width) {
-    #skills {
-      width: 50.5%; } }
 
 .stitle {
   background: #ba89b6;
