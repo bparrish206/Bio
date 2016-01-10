@@ -1,6 +1,14 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $lrgDesktop-width: 1270px;
+$miniPhone-width: 359px;
+
+
+@mixin miniPhone {
+  @media (max-width: #{$miniPhone-width}) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {

@@ -31,6 +31,9 @@ h1 {
 
 h2.page-description {
   width: 137%; }
+  @media (max-width: 359px) {
+    h2.page-description {
+      width: 118%; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     h2.page-description {
       padding-left: 50%; } }
@@ -70,10 +73,10 @@ h2.page-description {
   background-color: #ffffff; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #skills {
-      width: 65%; } }
+      width: 60%; } }
   @media (min-width: 1024px) and (max-width: 1269px) {
     #skills {
-      width: 55%; } }
+      width: 50%; } }
   @media (min-width: 1270px) {
     #skills {
       width: 50.5%; } }
@@ -162,13 +165,16 @@ button:hover {
   width: auto;
   text-align: center;
   font-family: comic;
-  font-size: 60%;
+  font-size: 57%;
   padding: 5px;
   background-image: linear-gradient(to right, #F0EAD6, white); }
+  @media (max-width: 359px) {
+    #weather {
+      font-size: 50%; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     #weather {
       float: right;
-      width: 46%;
+      width: 44%;
       height: 2.8rem; } }
   @media (min-width: 1024px) and (max-width: 1269px) {
     #weather {
@@ -184,29 +190,42 @@ button:hover {
 #weather li {
   margin: 0% 2% 7% 0;
   color: #5e5e5e; }
+  @media (max-width: 359px) {
+    #weather li {
+      margin: 0; } }
 
 #weather li:nth-child(1) {
   font-weight: bold; }
+  @media (max-width: 359px) {
+    #weather li:nth-child(1) {
+      float: left;
+      font-size: 90%; } }
 
 li#cond {
   float: left;
   margin-top: -5%;
-  width: 48%; }
+  padding-left: 4%; }
+  @media (max-width: 359px) {
+    li#cond {
+      margin-top: 0; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     li#cond {
-      width: 51%; } }
+      padding-left: 8%; } }
   @media (min-width: 1024px) and (max-width: 1269px) {
     li#cond {
-      width: 54%; } }
+      padding-left: 12%; } }
   @media (min-width: 1270px) {
     li#cond {
-      width: 57%; } }
+      padding-left: 15%; } }
 
 #weather img {
   float: right;
   margin-top: -9%;
   width: 12%;
   padding-right: 15%; }
+  @media (max-width: 359px) {
+    #weather img {
+      margin-top: 0; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     #weather img {
       width: auto; } }
