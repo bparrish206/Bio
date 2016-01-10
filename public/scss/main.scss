@@ -38,6 +38,18 @@ h1 {
 
 h2.page-description {
   width: 137%;
+
+  @include tablet() {
+    padding-left: 50%;
+  };
+
+  @include desktop() {
+    padding-left: 30%;
+  };
+
+  @include lrgDesktop-width() {
+    padding-left: 25%;
+  };
 }
 
 #headshot {
@@ -83,7 +95,7 @@ h2.page-description {
   @include lrgDesktop-width() {
     width: 50.5%;
   };
-  
+
   }
 
 .stitle {
@@ -192,14 +204,20 @@ button:hover {
 
     @include tablet() {
       float: right;
+      width: 46%;
+      height: 2.8rem;
     };
 
     @include desktop() {
       float: right;
+      width: 35%;
+      height: 2.8rem;
     };
 
     @include lrgDesktop-width() {
       float: right;
+      width: 34%;
+      height: 2.8rem;
     };
 }
 
@@ -215,7 +233,19 @@ button:hover {
 li#cond {
 float: left;
 margin-top: -5%;
-padding-left: 3%
+width: 48%;
+
+@include tablet() {
+  width: 51%;
+};
+
+@include desktop() {
+  width: 54%;
+};
+
+@include lrgDesktop-width() {
+  width: 57%;
+};
 }
 
 #weather img {
@@ -223,6 +253,18 @@ padding-left: 3%
   margin-top: -9%;
   width: 12%;
   padding-right: 15%;
+
+  @include tablet() {
+    width: auto;
+  };
+
+  @include desktop() {
+    width: auto;
+  };
+
+  @include lrgDesktop-width() {
+    width: auto;
+  };
 }
 
 #icons {

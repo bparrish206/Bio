@@ -9,13 +9,13 @@ $lrgDesktop-width: 1270px;
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width + 1px}) {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$lrgDesktop-width - 1px}) {
     @content;
   }
 }
 
 @mixin lrgDesktop-width {
-  @media (min-width: #{lrgDesktop-width}) {
+  @media (min-width: #{$lrgDesktop-width}) {
     @content;
   }
 }
