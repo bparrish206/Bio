@@ -194,13 +194,7 @@ li#cond {
   width: 48%; }
   @media (min-width: 768px) and (max-width: 1023px) {
     li#cond {
-      width: 51%; } }
-  @media (min-width: 1024px) and (max-width: 1269px) {
-    li#cond {
-      width: 54%; } }
-  @media (min-width: 1270px) {
-    li#cond {
-      width: 57%; } }
+      width: 60%; } }
 
 #weather img {
   float: right;

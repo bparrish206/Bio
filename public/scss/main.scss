@@ -1,3 +1,5 @@
+
+
 html {
   overflow-y: scroll;
 }
@@ -35,23 +37,45 @@ h1 {
 }
 
 h2.page-description {
-    POSITION: relative;
-    bottom: 20px;
-    left: 155px;
+  width: 137%;
+
+  @include tablet() {
+    padding-left: 50%;
+  };
+
+  @include desktop() {
+    padding-left: 30%;
+  };
+
+  @include lrgDesktop-width() {
+    padding-left: 25%;
+  };
 }
 
 #headshot {
   border: 4px #001F3F;
   border-radius: 50%;
   float:right;
-  display:block;
+  display:none;
   margin-right:20px;
+
+  @include tablet() {
+    display: block;
+  };
+
+  @include desktop() {
+    display: block;
+  };
+
+  @include lrgDesktop-width() {
+    display: block;
+  };
 }
 
 #skills {
   text-align: center;
   display: block;
-  width: 50.5%;
+  width: 75.5%;
   border: 1px gray solid;
   margin: auto;
   position: relative;
@@ -59,6 +83,19 @@ h2.page-description {
   font-family: comic;
   font-size: 60%;
   background-color: #ffffff;
+
+  @include tablet() {
+    width: 65%;
+  };
+
+  @include desktop() {
+    width: 55%;
+  }
+
+  @include lrgDesktop-width() {
+    width: 50.5%;
+  };
+
   }
 
 .stitle {
@@ -154,9 +191,9 @@ button:hover {
 }
 
 #weather {
-  float:right;
-  height: 44px;
-  width: 42%;
+  float:left;
+  max-height: 3rem;
+  width: auto;
   text-align: center;
   font-family:comic;
   font-size:60%;
@@ -164,10 +201,28 @@ button:hover {
   background-image:linear-gradient(
     to right,
     #F0EAD6, white);
+
+    @include tablet() {
+      float: right;
+      width: 46%;
+      height: 2.8rem;
+    };
+
+    @include desktop() {
+      float: right;
+      width: 35%;
+      height: 2.8rem;
+    };
+
+    @include lrgDesktop-width() {
+      float: right;
+      width: 34%;
+      height: 2.8rem;
+    };
 }
 
 #weather li {
-  margin: 0% 9% 8% -29px;
+  margin: 0% 2% 7% 0;
   color: #5e5e5e;
 }
 
@@ -176,15 +231,40 @@ button:hover {
 }
 
 li#cond {
-position: relative;
-bottom: 48px;
-left: 129px;
+float: left;
+margin-top: -5%;
+width: 48%;
+
+@include tablet() {
+  width: 51%;
+};
+
+@include desktop() {
+  width: 54%;
+};
+
+@include lrgDesktop-width() {
+  width: 57%;
+};
 }
 
 #weather img {
-position: relative;
-bottom: 57px;
-left: 109px;
+  float: right;
+  margin-top: -9%;
+  width: 12%;
+  padding-right: 15%;
+
+  @include tablet() {
+    width: auto;
+  };
+
+  @include desktop() {
+    width: auto;
+  };
+
+  @include lrgDesktop-width() {
+    width: auto;
+  };
 }
 
 #icons {
