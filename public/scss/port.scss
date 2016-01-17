@@ -8,19 +8,19 @@
 
 .port h3 {
    text-decoration: underline;
-   margin-left:10% !important;
+   margin-left: 5%;
  }
 
 .port h4 {
    text-align:left;
    text-decoration: underline;
-   margin:10px !important;;
+   margin:10px;
  }
 
 .port .heading {
-  margin: 3% 10%;
-  font-size: 110%;
-  text-align: center;
+  margin: 3% 5%;
+  font-size: 93%;
+  text-align: left;
 }
 
 .port button {
@@ -53,14 +53,26 @@
    text-align:left;
    border: 1px solid;
    padding:1px;
-   margin: 15px 100px 15px 100px;
+   margin: 15px 5% 15px 5%;
    box-shadow: 4px 4px 4px #ccc;
    }
 
  #projects p {
    display:block;
-   padding:4%;
+   padding:10%;
    color:#506c9f;
+
+   @include tablet() {
+     padding: 7%;
+   };
+
+   @include desktop() {
+     padding: 4%;
+   };
+
+   @include lrgDesktop-width() {
+     padding: 4%;
+   };
  }
 
  #projectIcons {

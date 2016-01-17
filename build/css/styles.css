@@ -342,17 +342,18 @@ footer p {
   border: 1px ridge #001F3F;
   text-align: center;
   display: inline;
-  font-size: 60%;
+  font-size: 72%;
   float: left;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc; }
+  @media (min-width: 556px) {
+    #tabs {
+      font-size: 100%; } }
   @media (min-width: 1024px) and (max-width: 1269px) {
     #tabs {
-      font-size: 16px;
       width: 60%; } }
   @media (min-width: 1270px) {
     #tabs {
-      font-size: 16px;
       width: 53%; } }
 
 .ui-tabs.ui-widget-content {
@@ -418,17 +419,17 @@ div#tabs-2 img {
 
 .port h3 {
   text-decoration: underline;
-  margin-left: 10% !important; }
+  margin-left: 5%; }
 
 .port h4 {
   text-align: left;
   text-decoration: underline;
-  margin: 10px !important; }
+  margin: 10px; }
 
 .port .heading {
-  margin: 3% 10%;
-  font-size: 110%;
-  text-align: center; }
+  margin: 3% 5%;
+  font-size: 93%;
+  text-align: left; }
 
 .port button {
   background: #0074D9;
@@ -457,7 +458,7 @@ div#tabs-2 img {
   text-align: left;
   border: 1px solid;
   padding: 1px;
-  margin: 15px 100px 15px 100px;
+  margin: 15px 5% 15px 5%;
   box-shadow: 4px 4px 4px #ccc; }
 
 #projects p {
