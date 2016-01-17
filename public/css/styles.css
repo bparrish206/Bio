@@ -260,17 +260,13 @@ footer p {
   font-family: comic;
   color: #0074D9;
   text-shadow: 1px 2px #AAAAAA;
-  position: relative;
-  left: 40rem;
-  padding: 0;
+  padding: 0 2%;
   margin-bottom: 0; }
 
 .about h2 {
   border-top: 1px solid;
-  padding-top: 21px;
-  margin-top: 0 !important;
-  width: 102%;
-  margin-left: -17px !important; }
+  width: 95%;
+  margin-left: 7%; }
 
 #box {
   background-color: #ffffff;
@@ -292,24 +288,42 @@ footer p {
   color: #506c9f; }
 
 #side {
-  margin-right: 20px;
-  margin-top: -30px;
-  margin-left: 679px;
-  padding-left: 5px;
+  padding: 0px 4%;
   float: right;
   display: inline;
   color: #506c9f;
   line-height: 125%; }
+  @media (min-width: 1024px) and (max-width: 1269px) {
+    #side {
+      margin-right: 20px;
+      margin-top: -30px;
+      margin-left: 679px;
+      padding-left: 5px; } }
+  @media (min-width: 1270px) {
+    #side {
+      margin-right: 20px;
+      margin-top: -30px;
+      margin-left: 679px;
+      padding-left: 5px; } }
 
 #side2 {
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-left: 679px;
-  padding-left: 5px;
   float: right;
   display: inline;
   color: #506c9f;
-  line-height: 125%; }
+  line-height: 125%;
+  padding: 0px 4%; }
+  @media (min-width: 1024px) and (max-width: 1269px) {
+    #side2 {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 679px;
+      padding-left: 5px; } }
+  @media (min-width: 1270px) {
+    #side2 {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 679px;
+      padding-left: 5px; } }
 
 #box > p:nth-child(1) {
   margin: 0; }
@@ -324,13 +338,23 @@ footer p {
   font-family: 'Droid Sans'; }
 
 #tabs {
+  width: 98%;
   border: 1px ridge #001F3F;
   text-align: center;
   display: inline;
-  font-size: 16px;
+  font-size: 72%;
   float: left;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc; }
+  @media (min-width: 556px) {
+    #tabs {
+      font-size: 100%; } }
+  @media (min-width: 1024px) and (max-width: 1269px) {
+    #tabs {
+      width: 60%; } }
+  @media (min-width: 1270px) {
+    #tabs {
+      width: 53%; } }
 
 .ui-tabs.ui-widget-content {
   background: #F0EAD6;
@@ -382,7 +406,7 @@ footer p {
 .ui-tabs .ui-tabs-panel {
   padding: 1em;
   float: right;
-  width: 35em; }
+  width: auto; }
 
 div#tabs-2 img {
   padding: 0 10px; }
