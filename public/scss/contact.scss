@@ -1,13 +1,12 @@
 .contact {
-  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px;
+  font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; font-size: 28px; cursor: #121212;
 }
 
 .contact h2 {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #121212;
   padding-top: 1%;
   margin: -1% 2% 0;
   font-size: 103%;
-  color: #666;
   font-family: comic;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .contact #box {
-  background-color: #FFF;
+  background-color: #EDEDE8;
   border: 1px ridge #001F3F;
   text-align: right;
   font-family: comic;

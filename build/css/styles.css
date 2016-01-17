@@ -2,7 +2,8 @@ html {
   overflow-y: scroll; }
 
 body {
-  background-color: #e7e9ec; }
+  background-color: #e7e9ec;
+  color: #121212; }
 
 .index {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
@@ -167,7 +168,7 @@ button:hover {
   font-family: comic;
   font-size: 57%;
   padding: 5px;
-  background-image: linear-gradient(to right, #F0EAD6, white); }
+  background-image: linear-gradient(to right, #EDEDE8, white); }
   @media (max-width: 359px) {
     #weather {
       font-size: 50%; } }
@@ -485,14 +486,14 @@ div#tabs-2 img {
 
 .contact {
   font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
-  font-size: 28px; }
+  font-size: 28px;
+  cursor: #121212; }
 
 .contact h2 {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #121212;
   padding-top: 1%;
   margin: -1% 2% 0;
   font-size: 103%;
-  color: #666;
   font-family: comic; }
 
 .ctPhoto {
@@ -504,7 +505,7 @@ div#tabs-2 img {
       display: inline-block; } }
 
 .contact #box {
-  background-color: #FFF;
+  background-color: #EDEDE8;
   border: 1px ridge #001F3F;
   text-align: right;
   font-family: comic;

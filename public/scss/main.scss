@@ -6,6 +6,7 @@ html {
 
 body {
   background-color: #e7e9ec;
+  color: #121212;
 }
 
 .index {
@@ -204,7 +205,7 @@ button:hover {
   padding: 5px;
   background-image:linear-gradient(
     to right,
-    #F0EAD6, white);
+    #EDEDE8, white);
 
     @include miniPhone() {
       font-size: 50%;
