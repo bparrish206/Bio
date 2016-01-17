@@ -5,27 +5,33 @@
 .contact h2 {
   border-bottom: 1px solid #aaa;
   padding-top: 1%;
-  margin: -1% 5% 0;
-  font-size: 114%
+  margin: -1% 2% 0;
+  font-size: 103%;
+  color: #666;
+  font-family: comic;
+}
+
+.ctPhoto {
+  width: 50%;
+  float: left;
+  display: none;
+
+  @include min(556px) {
+    display: inline-block;
+  };
 }
 
 .contact #box {
-  background-color: #F0EAD6;
+  background-color: #FFF;
   border: 1px ridge #001F3F;
-  text-align: center;
+  text-align: right;
   font-family: comic;
   font-size: 60%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  margin: 4% 17%;
   display: block;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  margin-top: 5%;
   box-shadow: 4px 4px 4px #ccc;
-  padding: 2% 10%;
 }
 
 .contact #box a first-child {
@@ -34,6 +40,7 @@
 
 .contact h4 {
   text-decoration:underline;
+  margin-top: 0;
 }
 
 #gen {
@@ -44,7 +51,7 @@
   text-align: left;
   display: block;
   padding: 3% 0;
-  margin: 1% 5%;
+  margin: 1% 2%;
   color: #0074D9;
 }
 
@@ -54,7 +61,7 @@
 
 #wrapper {
   padding:2%;
-  padding-bottom:35%;
+  padding-bottom:15%;
   background-image: linear-gradient(#F0F8FF, white);
-  margin: 0% 10%;
+  margin: 0 10%;
 }
