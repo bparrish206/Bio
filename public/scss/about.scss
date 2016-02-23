@@ -152,5 +152,15 @@
 .ui-tabs .ui-tabs-panel { padding: 1em; float: right; width: auto;}
 
 div#tabs-2 img {
-  padding:0 10px;
+padding:0 10px;
+}
+
+#tabs-1 > ul > li {
+  display: block;
+  padding: 0 0 2%;
+}
+
+#tabs-1 > ul > li a {
+  color: #5890ff;
+  text-decoration: underline;
 }
