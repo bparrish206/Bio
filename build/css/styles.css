@@ -276,11 +276,10 @@ footer p {
   margin-left: 7%; }
 
 #box {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  font-family: comic;
-  font-size: 96%;
-  display: inline; }
+  column-count: 1; }
+  @media (min-width: 760px) {
+    #box {
+      column-count: 2; } }
 
 #tabs-4 h4 {
   border: 2px solid #001F3F;
@@ -300,18 +299,6 @@ footer p {
   display: inline;
   color: #506c9f;
   line-height: 125%; }
-  @media (min-width: 1024px) and (max-width: 1269px) {
-    #side {
-      margin-right: 20px;
-      margin-top: -30px;
-      margin-left: 679px;
-      padding-left: 5px; } }
-  @media (min-width: 1270px) {
-    #side {
-      margin-right: 20px;
-      margin-top: -30px;
-      margin-left: 679px;
-      padding-left: 5px; } }
 
 #side2 {
   float: right;
@@ -319,18 +306,6 @@ footer p {
   color: #506c9f;
   line-height: 125%;
   padding: 0px 4%; }
-  @media (min-width: 1024px) and (max-width: 1269px) {
-    #side2 {
-      margin-top: 10px;
-      margin-right: 20px;
-      margin-left: 679px;
-      padding-left: 5px; } }
-  @media (min-width: 1270px) {
-    #side2 {
-      margin-top: 10px;
-      margin-right: 20px;
-      margin-left: 679px;
-      padding-left: 5px; } }
 
 #box > p:nth-child(1) {
   margin: 0; }
@@ -345,23 +320,18 @@ footer p {
   font-family: 'Droid Sans'; }
 
 #tabs {
-  width: 98%;
+  width: 94%;
   border: 1px ridge #001F3F;
   text-align: center;
   display: inline;
   font-size: 72%;
   float: left;
   border-radius: 5px;
-  box-shadow: 4px 4px 4px #ccc; }
+  box-shadow: 4px 4px 4px #ccc;
+  break-inside: avoid; }
   @media (min-width: 556px) {
     #tabs {
       font-size: 100%; } }
-  @media (min-width: 1024px) and (max-width: 1269px) {
-    #tabs {
-      width: 60%; } }
-  @media (min-width: 1270px) {
-    #tabs {
-      width: 53%; } }
 
 .ui-tabs.ui-widget-content {
   background: #F0EAD6;
