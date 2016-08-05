@@ -66,7 +66,7 @@ column-count: 1;
 #box p:first-child:first-letter { float: left;color: #903; font-size: 75px; line-height: 60px; padding-right: 6px; padding-left: 4px; font-family: 'Droid Sans'; }
 
 #tabs {
-  width: 94%;
+  width: 90%;
   border: 1px ridge #001F3F;
   text-align: center;
   display:inline;
@@ -75,10 +75,16 @@ column-count: 1;
   border-radius:5px;
   box-shadow: 4px 4px 4px #ccc;
   break-inside: avoid;
+  margin: 0 3% 5% 3%;
 
-  @include min(556px){
+  @include min(556px) {
     font-size: 100%;
   }
+
+  @include min(768px) {
+    margin: 0 3% 5% 0;
+    width: 94%;
+  };
 
 }
 
@@ -130,4 +136,7 @@ padding:0 10px;
 #tabs-1 > ul > li a {
   color: #5890ff;
   text-decoration: underline;
+}
+#tabs-3 > img {
+  width: 87%;
 }

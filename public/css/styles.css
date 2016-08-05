@@ -320,7 +320,7 @@ footer p {
   font-family: 'Droid Sans'; }
 
 #tabs {
-  width: 94%;
+  width: 90%;
   border: 1px ridge #001F3F;
   text-align: center;
   display: inline;
@@ -328,10 +328,15 @@ footer p {
   float: left;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc;
-  break-inside: avoid; }
+  break-inside: avoid;
+  margin: 0 3% 5% 3%; }
   @media (min-width: 556px) {
     #tabs {
       font-size: 100%; } }
+  @media (min-width: 768px) {
+    #tabs {
+      margin: 0 3% 5% 0;
+      width: 94%; } }
 
 .ui-tabs.ui-widget-content {
   background: #F0EAD6;
@@ -395,6 +400,9 @@ div#tabs-2 img {
 #tabs-1 > ul > li a {
   color: #5890ff;
   text-decoration: underline; }
+
+#tabs-3 > img {
+  width: 87%; }
 
 .port {
   background-color: #e7e9ec; }

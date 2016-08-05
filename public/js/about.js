@@ -1,7 +1,7 @@
 
-$(document).ready(function(){
+$(document).ready(function() {
   $( "#tabs" ).tabs({
-    event: "click"
+   event: "click"
   });
   $('#chart_div').hide();
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
     google.load("visualization", "1", {packages:["corechart"], "callback":drawChart });
     google.setOnLoadCallback(drawChart);
 
-    $('#tabs-4').append('<h4>' + data.chart + " " + data.date + " " + data.choice + " " + data.value + '%'+ '</h4>', '<br>', '<button id=Chart>' + 'Show Chart' + '</button>');
+    $('#tabs-4').append('<h4>' + data.chart + " " + data.date + " " + data.choice + " " + Number(data.value).toFixed(2)  + '%'+ '</h4>', '<br>', '<button id=Chart>' + 'Show Chart' + '</button>');
     //$('#tabs-4').append('<button id=Chart>' + 'Show Chart' + '</button>');
 
     var bulkD = _.map(data.test2, function(elm){return  elm.date +", " + _.map(elm.estimates, function(est){return _.values(est)})});
