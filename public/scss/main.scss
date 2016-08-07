@@ -239,6 +239,7 @@ button:hover {
 
 #weather li {
   color: #5e5e5e;
+  padding: 0 1%;
 
   @include miniPhone() {
     margin: 0;
