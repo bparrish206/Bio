@@ -206,7 +206,7 @@ button:hover {
 
 #weather {
   float:left;
-  max-height: 3rem;
+  display: flex;
   width: auto;
   text-align: center;
   font-family:comic;
@@ -228,19 +228,16 @@ button:hover {
 
     @include desktop() {
       float: right;
-      width: 35%;
       height: 2.8rem;
     };
 
     @include lrgDesktop-width() {
       float: right;
-      width: 34%;
       height: 2.8rem;
     };
 }
 
 #weather li {
-  margin: 0% 2% 7% 0;
   color: #5e5e5e;
 
   @include miniPhone() {
@@ -259,31 +256,27 @@ button:hover {
 
 li#cond {
 float: left;
-margin-top: -5%;
-padding-left: 4%;
 
 @include miniPhone() {
   margin-top: 0;
 };
 
 @include tablet() {
-  padding-left: 8%;
+
 };
 
 @include desktop() {
-  padding-left: 12%
+
 };
 
 @include lrgDesktop-width() {
-  padding-left: 15%
+
 };
 }
 
 #weather img {
   float: right;
-  margin-top: -9%;
-  width: 12%;
-  padding-right: 15%;
+
 
   @include miniPhone() {
     margin-top: 0;

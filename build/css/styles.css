@@ -168,7 +168,7 @@ button:hover {
 
 #weather {
   float: left;
-  max-height: 3rem;
+  display: flex;
   width: auto;
   text-align: center;
   font-family: comic;
@@ -195,7 +195,6 @@ button:hover {
       height: 2.8rem; } }
 
 #weather li {
-  margin: 0% 2% 7% 0;
   color: #5e5e5e; }
   @media (max-width: 359px) {
     #weather li {
@@ -209,27 +208,13 @@ button:hover {
       font-size: 90%; } }
 
 li#cond {
-  float: left;
-  margin-top: -5%;
-  padding-left: 4%; }
+  float: left; }
   @media (max-width: 359px) {
     li#cond {
       margin-top: 0; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    li#cond {
-      padding-left: 8%; } }
-  @media (min-width: 1024px) and (max-width: 1269px) {
-    li#cond {
-      padding-left: 12%; } }
-  @media (min-width: 1270px) {
-    li#cond {
-      padding-left: 15%; } }
 
 #weather img {
-  float: right;
-  margin-top: -9%;
-  width: 12%;
-  padding-right: 15%; }
+  float: right; }
   @media (max-width: 359px) {
     #weather img {
       margin-top: 0; } }
