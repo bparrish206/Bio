@@ -193,7 +193,8 @@ button:hover {
       height: 2.8rem; } }
 
 #weather li {
-  color: #5e5e5e; }
+  color: #5e5e5e;
+  padding: 0 1%; }
   @media (max-width: 359px) {
     #weather li {
       margin: 0; } }

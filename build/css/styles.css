@@ -186,12 +186,10 @@ button:hover {
   @media (min-width: 1024px) and (max-width: 1269px) {
     #weather {
       float: right;
-      width: 35%;
       height: 2.8rem; } }
   @media (min-width: 1270px) {
     #weather {
       float: right;
-      width: 34%;
       height: 2.8rem; } }
 
 #weather li {
