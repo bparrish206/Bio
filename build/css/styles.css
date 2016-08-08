@@ -175,6 +175,9 @@ button:hover {
   font-size: 57%;
   padding: 5px;
   background-image: linear-gradient(to right, #EDEDE8, white); }
+  #weather lt {
+    font-weight: bold;
+    font-size: 110%; }
   @media (max-width: 359px) {
     #weather {
       font-size: 50%; } }
@@ -193,7 +196,8 @@ button:hover {
       height: 2.8rem; } }
 
 #weather li {
-  color: #5e5e5e; }
+  color: #5e5e5e;
+  padding: 0 1%; }
   @media (max-width: 359px) {
     #weather li {
       margin: 0; } }
