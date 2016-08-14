@@ -479,11 +479,11 @@ div#tabs-2 img {
 
 .ctPhoto {
   width: 50%;
-  float: left;
   display: none; }
   @media (min-width: 556px) {
     .ctPhoto {
-      display: inline-block; } }
+      display: inline-block;
+      width: 100%; } }
 
 .contact #box {
   background-color: #EDEDE8;
@@ -492,10 +492,12 @@ div#tabs-2 img {
   font-family: comic;
   font-size: 60%;
   margin: 4% 17%;
-  display: block;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc; }
+  @media (min-width: 556px) {
+    .contact #box {
+      column-count: 3; } }
 
 .contact #box a first-child {
   margin-left: 50px; }
@@ -516,7 +518,11 @@ div#tabs-2 img {
   color: #0074D9; }
 
 #deets {
-  display: block; }
+  display: block;
+  break-inside: avoid; }
+
+#social {
+  break-inside: avoid; }
 
 #wrapper {
   padding: 2%;

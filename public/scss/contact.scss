@@ -12,11 +12,11 @@
 
 .ctPhoto {
   width: 50%;
-  float: left;
   display: none;
 
   @include min(556px) {
     display: inline-block;
+    width: 100%;
   };
 }
 
@@ -27,10 +27,13 @@
   font-family: comic;
   font-size: 60%;
   margin: 4% 17%;
-  display: block;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc;
+
+  @include min(556px) {
+    column-count: 3
+  }
 }
 
 .contact #box a first-child {
@@ -56,6 +59,11 @@
 
 #deets {
   display:block;
+  break-inside: avoid;
+}
+
+#social {
+  break-inside: avoid;
 }
 
 #wrapper {

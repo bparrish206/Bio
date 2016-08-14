@@ -177,7 +177,9 @@ button:hover {
   background-image: linear-gradient(to right, #EDEDE8, white); }
   #weather lt {
     font-weight: bold;
-    font-size: 110%; }
+    font-size: 110%;
+    color: #5e5e5e;
+    padding: 0 4%; }
   @media (max-width: 359px) {
     #weather {
       font-size: 50%; } }
@@ -477,11 +479,11 @@ div#tabs-2 img {
 
 .ctPhoto {
   width: 50%;
-  float: left;
   display: none; }
   @media (min-width: 556px) {
     .ctPhoto {
-      display: inline-block; } }
+      display: inline-block;
+      width: 100%; } }
 
 .contact #box {
   background-color: #EDEDE8;
@@ -490,10 +492,12 @@ div#tabs-2 img {
   font-family: comic;
   font-size: 60%;
   margin: 4% 17%;
-  display: block;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #ccc; }
+  @media (min-width: 556px) {
+    .contact #box {
+      column-count: 3; } }
 
 .contact #box a first-child {
   margin-left: 50px; }
@@ -513,8 +517,9 @@ div#tabs-2 img {
   margin: 1% 2%;
   color: #0074D9; }
 
-#deets {
-  display: block; }
+#deets #social {
+  display: block;
+  break-inside: avoid; }
 
 #wrapper {
   padding: 2%;
