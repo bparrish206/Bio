@@ -517,8 +517,11 @@ div#tabs-2 img {
   margin: 1% 2%;
   color: #0074D9; }
 
-#deets #social {
+#deets {
   display: block;
+  break-inside: avoid; }
+
+#social {
   break-inside: avoid; }
 
 #wrapper {
