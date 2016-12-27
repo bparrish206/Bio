@@ -167,9 +167,9 @@ var Template = {
 				hoverDelay:50
 			});
 		});
+},
+	//	this._initAjaxPagesLoading($('section.page-portfolio'));
 
-		this._initAjaxPagesLoading($('section.page-portfolio'));
-	},
 
 	/**
 	 * Init google map component
