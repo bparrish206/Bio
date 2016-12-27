@@ -1,88 +1,223 @@
-<!DOCTYPE htm>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<title> Portfolio</title>
-<link href='css/styles.css' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
-</head>
-<body>
-  <div class="port">
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <ul>
-      <li> <a href = 'index.html'> Home</a></li>
-      <li> <a href = 'about.html'> About</a></li>
-      <li> <a href = 'contact.html'> Contact</a></li>
-    </ul>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Brent's - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- stylesheets -->
+        <link href='css/styles.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
+        <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style5.css">
+        <!-- end stylesheets -->
+    </head>
+    <body class="layout-body layout-body--portfolio">
+        <!-- .layout -->
+        <div class="layout layout-width">
+            <div class="layout-anti-scroll layout-anti-scroll--active layout-width"></div>
+            <!-- .layout-header -->
+            <div class="layout-header layout-width">
+                <header>
+                    <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
+                    <ul class="main-nav">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="index.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-home"></i>
+                                </span>
+                                <span class="main-nav__item-content">Home</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="resume.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-profile"></i>
+                                </span>
+                                <span class="main-nav__item-content">Resume</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="services.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-stats-bars2"></i>
+                                </span>
+                                <span class="main-nav__item-content">Services</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="portfolio.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-books"></i>
+                                </span>
+                                <span class="main-nav__item-content">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="blog.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-blog"></i>
+                                </span>
+                                <span class="main-nav__item-content">Blog</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="contact.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-envelop"></i>
+                                </span>
+                                <span class="main-nav__item-content">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <a class="mobile-menu__toggle" href="portfolio.html#">
+                            <span class="mobile-menu__toggle__icon">
+                                <i class="fa fa-bars mobile-menu__toggle__icon__open"></i>
+                                <i class="fa fa-times mobile-menu__toggle__icon__close"></i>
+                            </span>
+                        </a>
+                    </div>
+                </header>
+            </div>
+            <!-- end .layout-header -->
+            <!-- .layout-sidebar -->
+            <div class="layout-sidebar layout-sidebar-width">
+                <!-- .sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar__site-name">paul rossi.</div>
+                    <div class="widget">
+                        <ul class="widget__list">
+                            <li>web developer</li>
+                            <li>photographer</li>
+                            <li>soccer fan</li>
+                            <li>father of two</li>
+                        </ul>
+                    </div>
+                    <!-- .social-icons -->
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="social-icon--twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/" target="_blank" class="social-icon--facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank" class="social-icon--google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/" target="_blank" class="social-icon--pinterest">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon--linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end .social-icons -->
+                    <footer class="footer">
+                        <p class="footer__copyright">&copy; Rossi, 2015. All rights reserved.</p>
+                    </footer>
+                </div>
+                <!-- end .sidebar -->
+            </div>
+            <!-- end .layout-sidebar -->
+            <div class="port layout-container-main layout-container-width">
+                <!-- .layout-content -->
+                <div class="layout-content port">
+                    <section class="page-portfolio">
+                        <div class="layout-title-wrapper layout-row">
+                            <h1 class="layout-title layout-container-width layout-container">Portfolio
+                                <span class="layout-title__subtitle">Recent Projects</span>
+                            </h1>
+                        </div>
+                        <div id="projects">
+                          <h4>Eatingwell.com - 7/2016</h4>
+                          <button class="btn btn-lg btn--style1""><a href="http://www.eatingwell.com/recipes/"/>EatingWell.com</a></button>
+                          <p>Working with Allrecipes.com engineers, I helped redevelop the eatingwell.com website.  I redid the website’s navigation, recipe pages, recipe hubs, slideshow pages, ads and account profile using C# ASP.NET MVC, Razor, and Angular in a mobile first responsive design.  I wrote new controllers, view models, views, tests and styles using Sass and atomic design principles.  I also used Allrecipes.com services to make use of Allrecipes.com tools including ads.</p>
 
-    <ul id="projectIcons">
-      <li><a href = "http://en.wikipedia.org/wiki/JavaScript"><img src="logos/js-logo.png"></a></li>
-      <li><a href ="http://nodejs.org/"><img src="logos/nodejs-light.jpg"></a></li>
-      <li><a href ="https://angularjs.org/"><img src="logos/ang.jpeg"></a></li>
-      <li><a href = "https://www.meteor.com/"><img src="logos/og-image-logo.png"></a></li>
-      <li><a href = "http://www.mongodb.org/"><img src="logos/MongoDB.png"></a></li>
-    </ul>
-    <p class="heading">I develop custom web solutions.  The current stack I'm working in is C# ASP.NET MVC, Angular and Sass.</p>
-    <h3> Recent Projects </h3>
-    <div id="projects">
-      <h4>Eatingwell.com - 7/2016</h4>
-      <button class="tops"><a href="http://www.eatingwell.com/recipes/"/>EatingWell.com</a></button>
-      <p>Working with Allrecipes.com engineers, I helped redevelop the eatingwell.com website.  I redid the website’s navigation, recipe pages, recipe hubs, slideshow pages, ads and account profile using C# ASP.NET MVC, Razor, and Angular in a mobile first responsive design.  I wrote new controllers, view models, views, tests and styles using Sass and atomic design principles.  I also used Allrecipes.com services to make use of Allrecipes.com tools including ads.</p>
+                        <h4>Planned Giving Micro Sites - 5/2015</h4>
+                        <button class="btn btn-lg btn--style1""><a href="http://quincycatholicschools.planningyourlegacy.org/"/>Quincy Catholic School</a></button>
+                        <button class="btn btn-lg btn--style1""><a href="http://aquariumofpacific.myplannedgift.org/"/>Aquarium of Pacific</a></button>
+                        <button class="btn btn-lg btn--style1""><a href="http://simpson.myplannedgift.org/"/>Simpson College</a></button>
+                        <p>Using mockups and client home pages, I created and integrated new “Planned Giving” micro sites to match look, feel and functionality of client sites using JavaScript, Jquery, CSS, HTML, the Ingeniux CMS and chrome dev tools.  A few examples of micro sites I built are here</P>
 
-    <h4>Planned Giving Micro Sites - 5/2015</h4>
-    <button class="tops"><a href="http://quincycatholicschools.planningyourlegacy.org/"/>Quincy Catholic School</a></button>
-    <button class="tops"><a href="http://aquariumofpacific.myplannedgift.org/"/>Aquarium of Pacific</a></button>
-    <button class="tops"><a href="http://simpson.myplannedgift.org/"/>Simpson College</a></button>
-    <p>Using mockups and client home pages, I created and integrated new “Planned Giving” micro sites to match look, feel and functionality of client sites using JavaScript, Jquery, CSS, HTML, the Ingeniux CMS and chrome dev tools.  A few examples of micro sites I built are here</P>
+                        <h4>Brent's Blog - 7/2015</h4>
+                        <button class="btn btn-lg btn--style1""><a href="https://mngdb.herokuapp.com"/>Brent's Blog</a></button>  <button class="btn btn-lg btn--style1""><a href="https://github.com/bparrish206/sea-b24-notes">Github Repo</a></button>
+                            <p>I built a member-only blog with Node, Express, Angular, and Mongoose that validates users with JWT tokens and lets them post and edit their post.  Still a work in progress.  Feel free to leave a note.</p>
 
-    <h4>Brent's Blog - 7/2015</h4>
-    <button class="tops"><a href="https://mngdb.herokuapp.com"/>Brent's Blog</a></button>  <button class="tops"><a href="https://github.com/bparrish206/sea-b24-notes">Github Repo</a></button>
-        <p>I built a member-only blog with Node, Express, Angular, and Mongoose that validates users with JWT tokens and lets them post and edit their post.  Still a work in progress.  Feel free to leave a note.</p>
+                        <h4>Blackjack - 7/04/2015</h4>
+                        <button class="btn btn-lg btn--style1""><a href="http://bpblackjack.herokuapp.com/">Blackjack</a></button>
+                        <button class="btn btn-lg btn--style1""><a href="https://github.com/bparrish206/foundation">Github repo</a></button>
+                        <p>I built a Blackjack game with just Node, JavaScript, Jquery and a touch of Foundation.  Enjoy.</p>
+                        <h4> Eat This - 2/02/2015</h4>
+                        <button class="btn btn-lg btn--style1""><a href="http://eathis.aerobaticapp.com/">Eat this app</a></button>
+                        <button><a href="https://github.com/bparrish206/eatThis">Github repo</a></button>
+                        <p>I built this app using Node and Angular.  This app uses the bigOven API to do a recipe or food ingredient search.</p>
 
-    <h4>Blackjack - 7/04/2015</h4>
-    <button class="tops"><a href="http://bpblackjack.herokuapp.com/">Blackjack</a></button>
-    <button class="tops"><a href="https://github.com/bparrish206/foundation">Github repo</a></button>
-    <p>I built a Blackjack game with just Node, JavaScript, Jquery and a touch of Foundation.  Enjoy.</p>
-    <h4> Eat This - 2/02/2015</h4>
-    <button class="tops"><a href="http://eathis.aerobaticapp.com/">Eat this app</a></button>
-    <button><a href="https://github.com/bparrish206/eatThis">Github repo</a></button>
-    <p>I built this app using Node and Angular.  This app uses the bigOven API to do a recipe or food ingredient search.</p>
+                        <h4>Obama Approval Ratings - updated 8/2015</h4>
+                            <button class="btn btn-lg btn--style1""><a href="https://intense-beach-3202.herokuapp.com/">Obama Approval</a></button>
+                            <button><a href="https://github.com/bparrish206/buildtool">Github repo</a></button>
+                            <p>I built a single-page app using Node, JavaScript, Jquery, and google charts that uses the Huffington Post's API to display Obama's approval ratings. </p>
 
-    <h4>Obama Approval Ratings - updated 8/2015</h4>
-        <button class="tops"><a href="https://intense-beach-3202.herokuapp.com/">Obama Approval</a></button>
-        <button><a href="https://github.com/bparrish206/buildtool">Github repo</a></button>
-        <p>I built a single-page app using Node, JavaScript, Jquery, and google charts that uses the Huffington Post's API to display Obama's approval ratings. </p>
+                        <h4> Bone - 12/19/2014 </h4>
+                        <button class="btn btn-lg btn--style1""><a href="https://bone.meteor.com/main">Bone app</a></button>
+                        <button><a href="https://github.com/DogMatch/bone">Github repo</a></button>
+                        <p> Our team of four built a "Tinder"-style app called BONE, which let’s dog owners search and find dog playmate matches in their city. While we collaborated on most of the project, I did the Dog Profile Views, image upload and image storage to our database, and I also did some of the "match views," and algorithm. We used Meteor, Mongodb, and Angular to build this app.</p>
 
-    <h4> Bone - 12/19/2014 </h4>
-    <button class="tops"><a href="https://bone.meteor.com/main">Bone app</a></button>
-    <button><a href="https://github.com/DogMatch/bone">Github repo</a></button>
-    <p> Our team of four built a "Tinder"-style app called BONE, which let’s dog owners search and find dog playmate matches in their city. While we collaborated on most of the project, I did the Dog Profile Views, image upload and image storage to our database, and I also did some of the "match views," and algorithm. We used Meteor, Mongodb, and Angular to build this app.</p>
+                        <h4> I'm-in! - 11/20/2014</h4>
+                        <button class="btn btn-lg btn--style1""><a href="https://iamin.herokuapp.com/">I'm-in App</a></button>
+                        <button><a href="https://github.com/Event-Sync/server-notes"> Github repo</a></button>
+                        <p> Our team built the backend of an IOS app (Im-in!) that lets users manage events through text messages. We built the server, routes, middleware for authentication and authorization, database, and wrote several unit tests. We used Node, Express, Mongoose, Twilo, Passport, Bcrypt and JWT tokens.</p>
 
-    <h4> I'm-in! - 11/20/2014</h4>
-    <button class="tops"><a href="https://iamin.herokuapp.com/">I'm-in App</a></button>
-    <button><a href="https://github.com/Event-Sync/server-notes"> Github repo</a></button>
-    <p> Our team built the backend of an IOS app (Im-in!) that lets users manage events through text messages. We built the server, routes, middleware for authentication and authorization, database, and wrote several unit tests. We used Node, Express, Mongoose, Twilo, Passport, Bcrypt and JWT tokens.</p>
+                        <h4> Mean Median Mode Page - 12/10/2014 </h4>
+                        <button class="btn btn-lg btn--style1""> <a href="https://calm-inlet-4412.herokuapp.com/">MMM App</a></button>
+                        <button><a href="https://github.com/bparrish206/sea-b24-mean-median-node"> Github repo</a></button>
+                          <p>I built an Angular single-page app that calculates the Mean, Median, and Mode, based on user numerical input.  I also used a Node and Browserify.</p>
 
-    <h4> Mean Median Mode Page - 12/10/2014 </h4>
-    <button class="tops"> <a href="https://calm-inlet-4412.herokuapp.com/">MMM App</a></button>
-    <button><a href="https://github.com/bparrish206/sea-b24-mean-median-node"> Github repo</a></button>
-      <p>I built an Angular single-page app that calculates the Mean, Median, and Mode, based on user numerical input.  I also used a Node and Browserify.</p>
+                            <h4>Seattle Weather App</h4>
+                            <button class="btn btn-lg btn--style1""><a href="https://currentweather.herokuapp.com/">check the weather</a></button>
+                            <button><a href="https://github.com/bparrish206/Cold">Github repo</a></button>
+                              <p>I created a single-page Node app that pulls data from the Weather Underground API and displays current weather conditions. </p>
 
-        <h4>Seattle Weather App</h4>
-        <button class="tops"><a href="https://currentweather.herokuapp.com/">check the weather</a></button>
-        <button><a href="https://github.com/bparrish206/Cold">Github repo</a></button>
-          <p>I created a single-page Node app that pulls data from the Weather Underground API and displays current weather conditions. </p>
+                            </div>
 
+                <!-- end .layout-content -->
+                <div class="footer--bottom layout-row">
+                    <p class="footer__copyright">&copy; Parrish, 2016. All rights reserved.</p>
+                </div>
+            </div>
         </div>
+        <!-- end .layout -->
+        <!-- javascripts -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="assets/jslib/jquery-1.11.2.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.ba-bbq.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-transition.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-collapse.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.easypiechart.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.raty.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.sharrre.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="assets/js/Template.js"></script>
+        <!-- end javascripts -->
+        <!-- .style-panel -->
 
-        <section id="icons"><a href='https://www.linkedin.com/in/brentparrish'><img src="../logos/images.png"></a>
-          <a href="https://github.com/bparrish206"><img src="../logos/Octocat.jpg"></a>
-          <a href="https://twitter.com/bparrish"><img src="../logos/t_logo-a.png"></a>
-        </section>
-        <footer><p>  &copy; 2015 Brent Parrish
-        </p></footer>
-</div>
-</body>
+        <!-- end .style-panel -->
+        <!-- style panel assets -->
+        <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
+        <script type="text/javascript" src="assets/js/StylePanel.js"></script>
+        <!-- end style panel assets -->
+    </body>
 </html>

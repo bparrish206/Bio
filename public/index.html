@@ -1,71 +1,176 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="keywords" content="Seattle, Web Developer, JavaScript, Node, Angular, API, software developer, css, html, full-stack, API, C#, ASP.NET MVC, Brent Parrish">
-    <title> Brent Parrish</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Brent's Resume - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Savvy version 1.0.4 date: 2015-06-13 08:59:50 -->
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="assets/csslib/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
+        <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style5.css">
+        <!-- end stylesheets -->
+    </head>
+    <body class="layout-body layout-body--home">
+        <!-- .layout -->
+        <div class="layout layout-width">
+            <div class="layout-anti-scroll layout-anti-scroll--active layout-width"></div>
+            <!-- .layout-header -->
+            <div class="layout-header layout-width">
+                <header>
+                    <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
+                    <ul class="main-nav">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="index.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-home"></i>
+                                </span>
+                                <span class="main-nav__item-content">Home</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="resume.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-profile"></i>
+                                </span>
+                                <span class="main-nav__item-content">Resume</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="about.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-stats-bars2"></i>
+                                </span>
+                                <span class="main-nav__item-content">About</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="portfolio.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-books"></i>
+                                </span>
+                                <span class="main-nav__item-content">Portfolio</span>
+                            </a>
+                        </li>
+                        <!--<li class="main-nav__item">
+                            <a class="main-nav__item-link" href="blog.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-blog"></i>
+                                </span>
+                                <span class="main-nav__item-content">Blog</span>
+                            </a>
+                        </li> -->
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="contact.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-envelop"></i>
+                                </span>
+                                <span class="main-nav__item-content">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <a class="mobile-menu__toggle" href="index.html#">
+                            <span class="mobile-menu__toggle__icon">
+                                <i class="fa fa-bars mobile-menu__toggle__icon__open"></i>
+                                <i class="fa fa-times mobile-menu__toggle__icon__close"></i>
+                            </span>
+                        </a>
+                    </div>
+                </header>
+            </div>
+            <!-- end .layout-header -->
+            <!-- .layout-sidebar -->
+            <div class="layout-sidebar layout-sidebar-width">
+                <!-- .sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar__site-name">Brent Parrish</div>
+                    <div class="widget">
+                        <ul class="widget__list">
+                            <li>web developer</li>
+                            <li> dropshipper - <a href="https://www.milehighbazaar.com/">Mile High Bazaar</a></li>
+                            <li>hiker</li>
+                            <li>football fan</li>
+                            <li>former fundraiser</li>
+                        </ul>
+                    </div>
+                    <!-- .social-icons -->
+                    <ul class="social-icons">
+                      <li>
+                          <a href="https://www.linkedin.com/in/brentparrish" target="_blank" class="social-icon--linkedin">
+                              <i class="fa fa-linkedin"></i>
+                          </a>
+                      </li>
+                      <li> <a href="https://github.com/bparrish206" target="_blank" class="social-icons--github">
+                        <i class="fa fa-github-square"></i>
+                      </a>
+                        <li>
+                            <a href="https://twitter.com/bparrish" target="_blank" class="social-icon--twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/brentparrish202" target="_blank" class="social-icon--facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
 
-  </head>
-  <body>
-    <div class="index">
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <ul>
-        <li> <a href = 'about.html'> About</a></li>
-        <li> <a href = 'portfolio.html'> Portfolio</a></li>
-        <li> <a href = 'contact.html'> Contact</a></li>
-      </ul>
-      <ul id ="weather">
-        <lt>Boulder<br> Weather</lt>
-        <li id ="temp">  </li>
-        <li id = "cond">  </li>
-      </ul>
-    </div>
-      <header class="main-header " style="background-image: url(https://ununsplash.imgix.net/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?q=75&fm=jpg&s=a7538e1162bc4239180bb02813de4739)">
+                    </ul>
+                    <!-- end .social-icons -->
+                    <footer class="footer">
+                        <p class="footer__copyright">&copy; Parrish, 2016. All rights reserved.</p>
+                    </footer>
+                </div>
+                <!-- end .sidebar -->
+            </div>
+            <!-- end .layout-sidebar -->
+            <div class="layout-container-main layout-container-width">
+                <!-- .layout-content -->
+                <div class="layout-content">
+                    <section class="page-home layout-row">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="page-home__page-title">Web Development</h1>
+                                <div class="page-home__text">
+                                    <p>I'm a Web Developer living in Louisville, CO, with a background in political and nonprofit fundraising. I develop custom web solutions onsite with our clients on both short and long term projects.</p>
+                                    <p>The current stack I'm working in is C#, ASP.NET, SQL, Javascript, Knockout, DataTables.js, HTML, CSS. </p>
 
-      <div class="vertical">
-        <div class="main-header-content inner">
-          <div class="subNav">
-          <p> Brent Parrish's page - Web Development</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 page-home__thumbnail-wrap">
+                                <img id='headshot' src='https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b1/0d7/3dc3b95.jpg' style="width:150px;height:150px"></a>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+                <!-- end .layout-content -->
+                <div class="footer--bottom layout-row">
+                    <p class="footer__copyright">&copy; Parrish, 2016. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-          <a href='about.html'><img id='headshot' src='https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b1/0d7/3dc3b95.jpg' style="width:150px;height:150px"></a>
-
-        </div>
-        <article id="skills">
-        <h2 class="stitle">Technical Skills</h2>
-          <p>JavaScript, Angular, C# ASP.NET MVC, Razor, Node.js, APIs, Jquery, Jasmine, HTML, CSS, MongoDB, Git, Github, Grunt, Sass</p>
-            <p></p>
-          <h3> Developing</h3>
-          <p>SQL, React, Python, Selenium, Karma</p>
-        </article>
-
-      </div>
-
-    </header>
-
-    <aside id="signUp">
-      <form>
-        <label for='signUp'> Email List</label>
-        <input type='text' id='signUp' placeholder="email@example.com">
-      </form>
-      <p id="email">Your email will not be spammed or sold just an occasional update.</p>
-      <button id="sub"> Submit</button>
-  </aside>
-
-<section id="icons"><a href='https://www.linkedin.com/in/brentparrish'><img src="../logos/images.png"></a>
-  <a href="https://github.com/bparrish206"><img src="../logos/Octocat.jpg"></a>
-  <a href="https://twitter.com/bparrish"><img src="../logos/t_logo-a.png"></a>
-</section>
-<footer><p>  &copy; 2015 Brent Parrish
-  </p></footer>
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-
-
-<script src="js/flow.js"></script>
-</div>
-</body>
+        <!-- end .layout -->
+        <!-- javascripts -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="assets/jslib/jquery-1.11.2.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.ba-bbq.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-transition.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-collapse.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.easypiechart.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.raty.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.sharrre.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="assets/js/Template.js"></script>
+        <!-- end javascripts -->
+        <!-- .style-panel -->
+        <!-- end .style-panel -->
+        <!-- style panel assets -->
+        <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
+        <script type="text/javascript" src="assets/js/StylePanel.js"></script>
+        <!-- end style panel assets -->
+    </body>
 </html>

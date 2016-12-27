@@ -1,90 +1,264 @@
-<!DOCTYPE htm>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<title> About</title>
-<link href='css/styles.css' rel='stylesheet' type="text/css">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Brent - About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Savvy version 1.0.4 date: 2015-06-13 08:59:50 -->
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="assets/csslib/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
+        <link rel="stylesheet" type="text/css" href="assets/csslib/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
+        <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style5.css">
+        <!-- end stylesheets -->
+    </head>
+    <body class="layout-body layout-body--services">
+        <!-- .layout -->
+        <div class="layout layout-width">
+            <div class="layout-anti-scroll layout-anti-scroll--active layout-width"></div>
+            <!-- .layout-header -->
+            <div class="layout-header layout-width">
+                <header>
+                    <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
+                    <ul class="main-nav">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="index.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-home"></i>
+                                </span>
+                                <span class="main-nav__item-content">Home</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="resume.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-profile"></i>
+                                </span>
+                                <span class="main-nav__item-content">Resume</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="services.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-stats-bars2"></i>
+                                </span>
+                                <span class="main-nav__item-content">Services</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="portfolio.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-books"></i>
+                                </span>
+                                <span class="main-nav__item-content">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="blog.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-blog"></i>
+                                </span>
+                                <span class="main-nav__item-content">Blog</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="contact.html">
+                                <span class="main-nav__item-icon-wrapper">
+                                    <i class="main-nav__item-icon icon-envelop"></i>
+                                </span>
+                                <span class="main-nav__item-content">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <a class="mobile-menu__toggle" href="services.html#">
+                            <span class="mobile-menu__toggle__icon">
+                                <i class="fa fa-bars mobile-menu__toggle__icon__open"></i>
+                                <i class="fa fa-times mobile-menu__toggle__icon__close"></i>
+                            </span>
+                        </a>
+                    </div>
+                </header>
+            </div>
+            <!-- end .layout-header -->
+            <!-- .layout-sidebar -->
+            <div class="layout-sidebar layout-sidebar-width">
+                <!-- .sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar__site-name">paul rossi.</div>
+                    <div class="widget">
+                        <ul class="widget__list">
+                            <li>web developer</li>
+                            <li>photographer</li>
+                            <li>soccer fan</li>
+                            <li>father of two</li>
+                        </ul>
+                    </div>
+                    <!-- .social-icons -->
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="social-icon--twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/" target="_blank" class="social-icon--facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank" class="social-icon--google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/" target="_blank" class="social-icon--pinterest">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon--linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end .social-icons -->
+                    <footer class="footer">
+                        <p class="footer__copyright">&copy; Rossi, 2015. All rights reserved.</p>
+                    </footer>
+                </div>
+                <!-- end .sidebar -->
+            </div>
+            <!-- end .layout-sidebar -->
+            <div class="layout-container-main layout-container-width">
+                <!-- .layout-content -->
+                <div class="layout-content">
+                    <section class="page-services">
+                        <div class="layout-title-wrapper layout-row">
+                            <h1 class="layout-title layout-container-width layout-container">About
+                                <span class="layout-title__subtitle">Behind the curtain</span>
+                            </h1>
+                        </div>
+                        <div class="layout-row service-item">
+                            <div class="layout-container">
+                                <div class="service-item__icon-wrap">
+                                    <div class="service-item__icon">
+                                      <i class="fa fa-gears"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item__content">
+                                    <h2 class="service-item__title">Background</h2>
+                                    <p class="service-item__description">I'm a Web Developer with a background in fundraising.
+I started dabbling with code a few years ago as hobby. My previous career was in political and nonprofit fundraising, so coding was a refreshing change of pace. I started using free websites like Code Academy and just tinkering with it on my own. The thrill of getting my code to work and the excitement of building things started to grow.I took a couple Python classes at the UW Extension School, which I really enjoyed, but I decided to focus more on JavaScript. In 2014, I successfully completed Code Fellows two-month intensive Full-Stack JavaScript Development Accelerator program and have been a Web Developer ever since.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="layout-row service-item">
+                            <div class="layout-container">
+                                <div class="service-item__icon-wrap">
+                                    <div class="service-item__icon">
+                                      
+                                    </div>
+                                </div>
+                                <div class="service-item__content">
+                                    <h2 class="service-item__title">Family</h2>
+                                    <p class="service-item__description">I've been lucky enough to be married to my beautiful and wonderful wife, Rosia, for almost 6 years now. We also have two quirky and adorable cats
+My wife is a Naturopathic Doctor, she got her ND from Bastyr University. She is a blessing in my life, a healer, teacher and advocate for Naturopathic medicine. If you'd like to find out more about how an ND can help you checkout:
+<a href="http://www.naturedocj.com/bios/">Rosia's professional page </a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="layout-row service-item">
+                            <div class="layout-container">
+                                <div class="service-item__icon-wrap">
+                                    <div class="service-item__icon">
+                                    <i class="icon-bullhorn"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item__content">
+                                    <h2 class="service-item__title">Sports</h2>
+                                    <p class="service-item__description">As a native of the Washington DC area, I love all DC sports teams even though they continue to break my heart.
+The Wizards are going all the way this year!!!</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="layout-row service-item">
+                            <div class="layout-container">
+                                <div class="service-item__icon-wrap">
+                                    <div class="service-item__icon">
+                                        <i class="icon-flag"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item__content">
+                                    <h2 class="service-item__title">Politics</h2>
+                                    <p class="service-item__description">In a previous life I worked in politics. I have been a Finance Director on a number of statewide and congressional campaigns all over the country. Working in politics was great, but now I'm pursuing other endeavors, including coding.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="layout-row service-item">
+                            <div class="layout-container">
+                                <div class="service-item__icon-wrap">
+                                    <div class="service-item__icon">
 
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans">
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-</head>
-<body>
-  <div class="about">
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <ul>
-      <li> <a href = 'index.html'> Home</a></li>
-      <li> <a href = 'portfolio.html'> Portfolio</a></li>
-      <li> <a href = 'contact.html'> Contact</a></li>
-    </ul>
-  </div>
-
-  <div id="cont">
-    <h1>About Brent</h1>
-  <aside id="box">
-    <p> I’m a Web Developer with a background in fundraising that focuses on building apps and websites to make life better for others. </p>
-    <p id="side"> I started dabbling with code a few years ago as hobby.  My previous career was in political and nonprofit fundraising, so coding was a refreshing change of pace.  I started using free websites like Code Academy and just tinkering with it on my own.  The thrill of getting my code to work and the excitement of building things started to grow.</p>
-    <p id="side2">I took a couple Python classes at the UW Extension School, which I really enjoyed, but I decided to focus more on JavaScript.  In 2014, I successfully completed Code Fellows two-month intensive Full-Stack JavaScript Development Accelerator program and have been a Web Developer ever since.
-    </p>
-    <div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Family</a></li>
-    <li><a href="#tabs-2">Outdoors</a></li>
-    <li><a href="#tabs-3">Sports</a></li>
-    <li><a href="#tabs-4">Past Career</a></li>
-  </ul>
-
-  <div id="tabs-1">
-    <h2> Family</h2>
-    <p> I've been lucky enough to be married to my beautiful and wonderful wife, Rosia, for almost 4 years now (we started dating 8 years ago). We also have two quirky and adorable cats</p>
-
-    <img src='pics/247351_10150262847960821_1693245_n.jpg'>
-    <p>My wife is graduating this year from Bastyr University as a Naturopathic Doctor.  She is a blessing in my life, a healer, teacher and advocate for Naturopathic medicine.  If you'd like to find out more about how an ND can help you checkout:</p>
-    <ul class="rLinks">
-      <li><a href="http://www.natureofmedicine.com/">Rosia's professional page</a> </li>
-    <li><a href="http://www.facebook.com/NDAdvocates">Facebook page</a></li>
-    </ul>
-  </div>
-  <div id="tabs-2">
-    <h2> Outdoors</h2>
-    <img src='pics/10461371_10152558875975821_1311048791483747313_n.jpg' style="width:250px;height:155px">
-    <img src='pics/482202_10152692767310346_1774886596_n.jpg' style="width:250px;height:155px">
-
-    <p> Here in the Pacific Northwest, we have a ton of great trails to choose from-- I love hiking off Highway 2, the Mountain Loop Highway, or if I have time, I enjoy hiking the North Cascades or even Mount Rainier.</p>
-    <a id="hike" href="http://www.wta.org/go-hiking/trip-reports/tripreport_search?creator=bparrish76">Brent's recent hikes</a>
-  </div>
-    <div id="tabs-3">
-    <h2> Sports</h2>
-    <p> As a native of the Washington DC area, I love all DC sports teams even though they continue to break my heart.</p>
-    <p> The Wizards are going all the way this year!!!</p>
-    <img src='pics/john-wall-slam-dunk.jpg'>
-  </div>
-  <div id="tabs-4">
-    <h2> Past Career</h2>
-
-    <p> In a previous life I worked in politics.  I have been a Finance Director on a number of statewide and congressional campaigns all over the country.  Working in politics was great, but now I'm pursuing other endeavors, including coding-- maybe someday I'll find a way to merge my passion for both!</p>
-    <img src='pics/1909633_10301700820_3602_n.jpg'>
-    <p> I obviously still love politics, so now I use tools like Huffington Post API to stay connected-- here's something I created to see the most current presidential approval ratings!</p>
-    <div id="chart_div"></div>
-  </div>
-</div>
-</aside>
-
-</div>
-
-<p></p><br><br>
-<section id="icons"><a href='https://www.linkedin.com/in/brentparrish'><img src="../logos/images.png"></a>
-  <a href="https://github.com/bparrish206"><img src="../logos/Octocat.jpg"></a>
-  <a href="https://twitter.com/bparrish"><img src="../logos/t_logo-a.png"></a>
-</section>
-<footer><p>  &copy; 2015 Brent Parrish
-</p></footer>
-</div>
-<script src="js/about.js"></script>
-<script src="js/flow.js"></script>
-</body>
+                                    </div>
+                                </div>
+                                <div class="service-item__content">
+                                    <h2 class="service-item__title">Dropshipping</h2>
+                                    <p class="service-item__description">As a hobby I run an online market <a href="https://www.milehighbazaar.com/">Mile High Bazaar.</a> Check it out for some great deals on rustic, cool home decor.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- end .layout-content -->
+                <div class="footer--bottom layout-row">
+                    <p class="footer__copyright">&copy; Parrish, 2016. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end .layout -->
+        <!-- javascripts -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="assets/jslib/jquery-1.11.2.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.ba-bbq.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-transition.js"></script>
+        <script type="text/javascript" src="assets/jslib/bootstrap-collapse.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.easypiechart.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.raty.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.sharrre.js"></script>
+        <script type="text/javascript" src="assets/jslib/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="assets/js/Template.js"></script>
+        <!-- end javascripts -->
+        <!-- .style-panel -->
+        <div class="style-panel" style="display:none">
+            <div class="style-panel__button">
+                <i class="fa fa-paint-brush"></i>
+            </div>
+            <div class="style-panel__title">Choose a color:</div>
+            <div class="style-panel__colors">
+                <a data-value="style1" href="services.html#" class="style-panel__color style-panel__color--style1"></a>
+                <a data-value="style2" href="services.html#" class="style-panel__color style-panel__color--style2"></a>
+                <a data-value="style3" href="services.html#" class="style-panel__color style-panel__color--style3"></a>
+                <a data-value="style4" href="services.html#" class="style-panel__color style-panel__color--style4"></a>
+                <a data-value="style5" href="services.html#" class="style-panel__color style-panel__color--style5"></a>
+                <a data-value="style6" href="services.html#" class="style-panel__color style-panel__color--style6"></a>
+            </div>
+            <div class="style-panel__info">and many more...</div>
+            <div class="style-panel__reset">
+                <button class="btn-reset btn btn-xs btn--style1">reset</button>
+            </div>
+        </div>
+        <!-- end .style-panel -->
+        <!-- style panel assets -->
+        <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
+        <script type="text/javascript" src="assets/js/StylePanel.js"></script>
+        <!-- end style panel assets -->
+    </body>
 </html>
